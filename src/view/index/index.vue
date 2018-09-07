@@ -1,16 +1,21 @@
 <template>
-    <layouts>
-        <div class="main" slot="main">
-           <h1>index</h1>
+    <layout>
+        <div class="page-index" slot="main">
+            <banner></banner>
+            <symbols></symbols>
+            <advantage></advantage>
+            <year></year>
+            <app></app>
         </div>
-    </layouts>
+    </layout>
 </template>
 
-<style lang='scss' scoped>
-  @import './index.scss';
+<style lang='scss'>
+    @import './style.scss';
 </style>
 
 <script>
-    import vm from './index.js'
-    export default vm
+    import vm from './main.js';
+
+    export default vm;
 </script>
