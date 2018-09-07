@@ -1,0 +1,33 @@
+/**
+ * @file
+ * @auth jinguangguo
+ * @date 2016/10/17
+ */
+
+.ui-btn {
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 0 15px;
+    min-width: 64px;
+    height: 40px;
+    line-height: 40px;
+    background-color: $color-btn;
+    border-radius: 24px;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 13px;;
+    transition: all 0.4s ease;
+    &:hover {
+        background-color: $color-btn-hover;
+        color: #fff;
+    }
+    &[disabled] {
+        cursor: not-allowed;
+        pointer-events: none;
+        box-shadow: none;
+        opacity: 0.7;
+        color: #fff;
+    }
+}
+
