@@ -7,6 +7,7 @@ const merge = require('webpack-merge')
 const baseWebpackConfig = require('./webpack.base.conf')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const HtmlWebpackExternalsPlugin = require('html-webpack-externals-plugin')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const OptimizeCSSPlugin = require('optimize-css-assets-webpack-plugin')
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
@@ -122,7 +123,37 @@ const webpackConfig = merge(baseWebpackConfig, {
                 to: config.build.assetsSubDirectory,
                 ignore: ['.*']
             }
-        ])
+        ]),
+
+        new HtmlWebpackExternalsPlugin({
+            externals: [
+                {
+                    module: 'jquery',
+                    entry: 'dist/jquery.min.js',
+                    global: 'jQuery'
+                },
+                {
+                    module: 'vue',
+                    entry: 'dist/vue.min.js',
+                    global: 'Vue'
+                },
+                {
+                    module: 'vue-router',
+                    entry: 'dist/vue-router.min.js',
+                    global: 'VueRouter'
+                },
+                {
+                    module: 'base',
+                    entry: {
+                        path: 'scss/base.css',
+                        cwpPatternConfig: {
+                            context: path.resolve(__dirname, 'src'),
+                        }
+                    },
+                },
+            ]
+        })
+
     ]
 })
 
