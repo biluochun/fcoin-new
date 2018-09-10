@@ -2,7 +2,7 @@
     <header class="header-container">
         <div class="header-top">
             <div class="header-top-left">
-                <span class="header-entry header-active-entry ">FT</span>
+                <span class="header-entry">FT</span>
                 <span class="header-entry">白皮书</span>
                 <span class="header-entry">资产透明</span>
                 <span class="header-entry">FInsur</span>
@@ -16,8 +16,13 @@
         <div class="header-bottom">
             <div class="header-bottom-left">                
                 <img class="header-logo" src="./logo.svg" alt="">
-                <span class="header-exchange-entry header-active-entry ">主板交易</span>
-                <span class="header-exchange-entry header-active-entry ">FOne交易</span>
+                <span style="width: 100px; height: 30px;"> 
+                    12
+                <i class="icon icon-logo"></i>icon-github
+                <i class="icon icon-github"></i>
+                </span>
+                <span class="header-exchange-entry">主板交易</span>
+                <span class="header-exchange-entry">FOne交易</span>
             </div>
             <div class="header-bottom-right">
                 <span>巴斯光年</span>
@@ -27,7 +32,6 @@
 </template>
 
 <style lang="scss">
-    @import '../scss/base.scss';
     .header-container {
         width: 100%;
         color: #737C80;
@@ -47,6 +51,10 @@
                     &:first-child {
                         padding-left: 27px;    
                         width: 30px;
+                    }
+                    &:hover {
+                        background: #394A53;
+                        color: #E9E9E9;
                     }
                 }
             }
@@ -82,6 +90,9 @@
                     text-align: center;
                     vertical-align: top;
                     cursor: pointer;
+                    &:hover {
+                        background: #394A53;
+                    }
                 }
             }
             .header-bottom-right {
