@@ -20,11 +20,10 @@
         <div class="header-bottom">
             <div class="header-bottom-left">                
                 <img class="header-logo" src="./logo.svg" alt="">
-                <span style="width: 100px; height: 30px;"> 
-                    12
-                    <i class="icon icon-logo"></i>icon-github
+                <!-- <span style="width: 100px; height: 30px;"> 
+                    <i class="icon icon-logo"></i>
                     <i class="icon icon-github"></i>
-                </span>
+                </span> -->
                 <span class="header-exchange-entry">主板交易</span>
                 <span class="header-exchange-entry">FOne交易</span>
             </div>
