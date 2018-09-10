@@ -24,7 +24,7 @@
                     <i class="icon icon-logo"></i>
                     <i class="icon icon-github"></i>
                 </span> -->
-                <i class="icon icon-logo header-logo"></i>
+                <!-- <i class="icon icon-logo header-logo"></i> -->
                 <span class="header-exchange-entry">主板交易</span>
                 <span class="header-exchange-entry">FOne交易</span>
             </div>
