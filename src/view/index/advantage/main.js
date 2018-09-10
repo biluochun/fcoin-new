@@ -4,13 +4,15 @@
  * @date 2018/9/7 下午7:33
  */
 
+import lang from './lang';
+
 export default {
     name: 'Advantage',
     components: {
 
     },
     created() {
-
+        this.$i18n.locale = 'cn';
     },
     data(){
         return {
