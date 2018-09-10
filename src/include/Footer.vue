@@ -81,8 +81,6 @@
     };
 </script>
 <style lang="scss">
-@import '../scss/base.scss';
-@import '../../static/icomoon/style.css';
 footer{
     width: 100%;
     background: #2f3d45;

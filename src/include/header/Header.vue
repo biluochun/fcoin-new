@@ -42,12 +42,10 @@
         </div>
     </header>
 </template>
-
-<style lang="scss">
+ <style lang="scss">
     @import './header.scss';
 </style>
-
-<script>
+ <script>
     import vm from './header.js'
     export default vm
 </script>
