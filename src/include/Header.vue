@@ -9,8 +9,12 @@
                 <span class="header-entry">FCandy</span>
             </div>
             <div class="header-top-right">
+                <div v-if="showLangBox" class="lang-box">
+                    <p class="lang-item" @click="changeLang('简体中文')">简体中文</p>
+                    <p class="lang-item" @click="changeLang('English')">English</p>
+                </div>
                 <span class="header-top-entry">App下载</span>
-                <span class="header-top-entry">简体中文</span>
+                <span class="header-top-entry" @click="showLangBox=!showLangBox">{{langText}}</span>
             </div>
         </div>
         <div class="header-bottom">
@@ -18,14 +22,22 @@
                 <img class="header-logo" src="./logo.svg" alt="">
                 <span style="width: 100px; height: 30px;"> 
                     12
-                <i class="icon icon-logo"></i>icon-github
-                <i class="icon icon-github"></i>
+                    <i class="icon icon-logo"></i>icon-github
+                    <i class="icon icon-github"></i>
                 </span>
                 <span class="header-exchange-entry">主板交易</span>
                 <span class="header-exchange-entry">FOne交易</span>
             </div>
             <div class="header-bottom-right">
-                <span>巴斯光年</span>
+                <div v-if="showUserMenu" class="user-menu">
+                    <p class="menu-item">交易</p>
+                    <p class="menu-item">账户</p>
+                    <p class="menu-item">订单管理</p>
+                    <p class="menu-item">财务明细</p>
+                    <p class="menu-item">设置</p>
+                    <p class="menu-item">退出</p>
+                </div>
+                <span @click="showUserMenu=!showUserMenu">巴斯光年</span>
             </div>
         </div>
     </header>
@@ -61,6 +73,30 @@
             .header-top-right {
                 display: inline-block;
                 float: right;
+                position: relative;
+                .lang-box {
+                    position: absolute;
+                    right: 220px;
+                    display: inline-block;
+                    width: 160px;
+                    height: 98px;
+                    padding: 5px 0;
+                    box-sizing: border-box;
+                    background: #192831;
+                    border: 1px solid #14181C;
+                    // vertical-align: top;
+                    color: #fff;
+                    .lang-item {
+                        width: 100%;
+                        height: 40px;
+                        line-height: 40px;
+                        margin: 5px 0;
+                        text-align: center;
+                        &:hover {
+                            background: #2F3D45;
+                        }
+                    }
+                }
                 .header-top-entry {
                     display: inline-block;
                     margin: 12px 30px 11px 0px;
@@ -96,12 +132,35 @@
                 }
             }
             .header-bottom-right {
+                position: relative;
                 float: right;
                 display: inline-block;
                 margin-right: 30px;
                 line-height: 60px;
                 font-size: 13px;
                 cursor: pointer;
+                .user-menu {
+                    position: absolute;
+                    top: 60px;
+                    right: 0;
+                    width: 160px;
+                    height: 260px;
+                    padding: 10px 0;
+                    box-sizing: border-box;
+                    background: #192831;
+                    border: 1px solid #14181C;
+                    color: #E9E9E9;
+                    .menu-item {
+                        width: 100%;
+                        height: 40px;
+                        line-height: 40px;
+                        padding-left: 20px;
+                        box-sizing: border-box;
+                        &:hover {
+                            background: #394A53;
+                        }
+                    }
+                }
             }
         }
         .header-active-entry {
@@ -115,14 +174,19 @@
     export default {
         data() {
             return {
-                
+                showLangBox: false,
+                langText: '简体中文',
+                showUserMenu: false,
             }
         },
         created() {
             
         },
         methods: {
-            
+            changeLang(str) {
+                this.langText = str
+                this.showLangBox = false
+            }
         },
     };
 </script>
