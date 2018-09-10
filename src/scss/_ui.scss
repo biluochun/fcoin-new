@@ -11,7 +11,7 @@
     min-width: 64px;
     height: 40px;
     line-height: 40px;
-    background-color: $color-btn;
+    background-color: $color-link;
     border-radius: 24px;
     color: #fff;
     text-align: center;
@@ -19,7 +19,7 @@
     font-size: 13px;;
     transition: all 0.4s ease;
     &:hover {
-        background-color: $color-btn-hover;
+        background-color: $color-link-hover;
         color: #fff;
     }
     &[disabled] {

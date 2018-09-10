@@ -7,6 +7,7 @@ const path = require('path')
 const baseWebpackConfig = require('./webpack.base.conf')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const HtmlWebpackExternalsPlugin = require('html-webpack-externals-plugin')
 const FriendlyErrorsPlugin = require('friendly-errors-webpack-plugin')
 const portfinder = require('portfinder')
 
@@ -65,7 +66,26 @@ const devWebpackConfig = merge(baseWebpackConfig, {
                 to: config.dev.assetsSubDirectory,
                 ignore: ['.*']
             }
-        ])
+        ]),
+        new HtmlWebpackExternalsPlugin({
+            externals: [
+                {
+                    module: 'jquery',
+                    entry: 'dist/jquery.js',
+                    global: 'jQuery'
+                },
+                {
+                    module: 'vue',
+                    entry: 'dist/vue.js',
+                    global: 'Vue'
+                },
+                {
+                    module: 'vue-router',
+                    entry: 'dist/vue-router.js',
+                    global: 'VueRouter'
+                }
+            ],
+        })
     ]
 })
 
