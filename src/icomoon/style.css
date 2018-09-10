@@ -1,0 +1,97 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?a14gqj');
+  src:  url('fonts/icomoon.eot?a14gqj#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?a14gqj') format('truetype'),
+    url('fonts/icomoon.woff?a14gqj') format('woff'),
+    url('fonts/icomoon.svg?a14gqj#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-support:before {
+  content: "\e900";
+  color: #e9e9e9;
+}
+.icon-more:before {
+  content: "\e901";
+  color: #e9e9e9;
+}
+.icon-exchange:before {
+  content: "\e902";
+  color: #00b07c;
+}
+.icon-search:before {
+  content: "\e904";
+}
+.icon-star:before {
+  content: "\e905";
+  color: #737c80;
+}
+.icon-star-active:before {
+  content: "\e906";
+  color: #00b07c;
+}
+.icon-user:before {
+  content: "\e907";
+  color: rgb(79, 88, 93);
+}
+.icon-user:before {
+  content: "\e908";
+  color: rgb(115, 124, 128);
+}
+.icon-app:before {
+  content: "\e909";
+  color: rgb(79, 88, 93);
+}
+.icon-github:before {
+  content: "\e90b";
+  color: rgb(92, 101, 107);
+}
+.icon-language:before {
+  content: "\e90d";
+  color: rgb(79, 88, 93);
+}
+.icon-logo-gray:before {
+  content: "\e90f";
+  color: #e9e9e9;
+}
+.icon-logo:before {
+  content: "\e910";
+  color: rgb(233, 233, 233);
+}
+.icon-medium:before {
+  content: "\e912";
+  color: rgb(92, 101, 107);
+}
+.icon-reddit:before {
+  content: "\e914";
+  color: rgb(92, 101, 107);
+}
+.icon-slack:before {
+  content: "\e916";
+  color: rgb(92, 101, 107);
+}
+.icon-telegram:before {
+  content: "\e918";
+  color: rgb(92, 101, 107);
+}
+.icon-twitter:before {
+  content: "\e91a";
+  color: rgb(92, 101, 107);
+}
