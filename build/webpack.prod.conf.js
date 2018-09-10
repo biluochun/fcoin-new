@@ -142,15 +142,15 @@ const webpackConfig = merge(baseWebpackConfig, {
                     entry: 'dist/vue-router.min.js',
                     global: 'VueRouter'
                 },
-                {
-                    module: 'base',
-                    entry: {
-                        path: 'scss/base.css',
-                        cwpPatternConfig: {
-                            context: path.resolve(__dirname, 'src'),
-                        }
-                    },
-                },
+                // {
+                //     module: 'base',
+                //     entry: {
+                //         path: 'scss/base.css',
+                //         cwpPatternConfig: {
+                //             context: path.resolve(__dirname, 'src'),
+                //         }
+                //     },
+                // },
             ]
         })
 
