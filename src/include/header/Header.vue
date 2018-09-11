@@ -17,18 +17,28 @@
                         <img class="lang-country" src="./img/English.png" alt="">English
                     </p>
                 </div>
-                <span class="header-top-entry">App下载</span>
-                <span class="header-top-entry" @click="showLangBox=!showLangBox">{{langText}}</span>
+                <span class="header-top-entry">
+                    <i class="icon-app icon-app-size">
+                        <i class="path1"></i><i class="path2"></i>    
+                    </i>
+                    App下载
+                </span>
+                <span class="header-top-entry" @click="showLangBox=!showLangBox">
+                    <i class="icon-language icon-language-size">
+                        <i class="path1"></i><i class="path2"></i>    
+                    </i>
+                    {{langText}}
+                </span>
             </div>
         </div>
         <div class="header-bottom">
             <div class="header-bottom-left">                
-                <img class="header-logo" src="./logo.svg" alt="">
-                <!-- <span style="width: 100px; height: 30px;"> 
-                    <i class="icon icon-logo"></i>
-                    <i class="icon icon-github"></i>
-                </span> -->
-                <!-- <i class="icon icon-logo header-logo"></i> -->
+                <!-- <img class="header-logo" src="./logo.svg" alt=""> -->
+                <span class="header-logo">
+                    <i class="icon-logo icon-logo-size">
+                        <i class="path1"></i><i class="path2"></i>    
+                    </i>
+                </span>
                 <span class="header-exchange-entry">主板交易</span>
                 <span class="header-exchange-entry">FOne交易</span>
             </div>
@@ -41,7 +51,14 @@
                     <p class="menu-item">设置</p>
                     <p class="menu-item">退出</p>
                 </div>
-                <span @click="showUserMenu=!showUserMenu">巴斯光年老铁</span>
+                <span @click="showUserMenu=!showUserMenu">
+                    <i class="icon-user icon-user-size">
+                        <i class="path1"></i><i class="path2"></i>    
+                    </i>
+                    巴斯光年
+                    <i v-if="!showUserMenu" class="icon-down icon-up-down"></i>
+                    <i v-if="showUserMenu" class="icon-up icon-up-down"></i>
+                </span>
             </div>
         </div>
     </header>
