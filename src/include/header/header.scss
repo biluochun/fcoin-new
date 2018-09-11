@@ -45,9 +45,15 @@
                     height: 40px;
                     line-height: 40px;
                     margin: 5px 0;
-                    text-align: center;
                     &:hover {
                         background: #2F3D45;
+                    }
+                    .lang-country {
+                        width: 22px;
+                        height: 14px;
+                        line-height: 40px;
+                        margin: -2px 20px;
+
                     }
                 }
             }

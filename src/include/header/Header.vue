@@ -10,8 +10,12 @@
             </div>
             <div class="header-top-right">
                 <div v-if="showLangBox" class="lang-box">
-                    <p class="lang-item" @click="changeLang('简体中文')">简体中文</p>
-                    <p class="lang-item" @click="changeLang('English')">English</p>
+                    <p class="lang-item" @click="changeLang('简体中文')">
+                        <img class="lang-country" src="./img/Chinese.png" alt="">简体中文
+                    </p>
+                    <p class="lang-item" @click="changeLang('English')">
+                        <img class="lang-country" src="./img/English.png" alt="">English
+                    </p>
                 </div>
                 <span class="header-top-entry">App下载</span>
                 <span class="header-top-entry" @click="showLangBox=!showLangBox">{{langText}}</span>
