@@ -1,4 +1,3 @@
-
 import './scss/base.scss';
 import '../src/icomoon/style.css';
 
@@ -7,13 +6,15 @@ import App from './App';
 import router from './router';
 import VueLocalStorage from 'vue-ls';
 import VueI18n from 'vue-i18n';
+import store from './store';
 
 Vue.use(require('vue-wechat-title'));
 Vue.config.productionTip = false;
 Vue.use(VueLocalStorage);
 
+
 let lang = Vue.ls.get('lang', 'en-us');
-//store.commit('setLang',lang);
+store.commit('setLang',lang); 
 
 Vue.use(VueI18n);
 const i18n = new VueI18n({
@@ -41,6 +42,7 @@ new Vue({
     el: '#app',
     router,
     i18n,
+    store,
     components: {App},
     template: '<App/>'
 });

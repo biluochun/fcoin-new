@@ -14,6 +14,7 @@ export default {
         changeLang(str) {
             this.langText = str
             this.showLangBox = false
+            this.$store.commit('setLang','cn-zh')
         }
     },
 };
