@@ -26,9 +26,11 @@
 
 .icon-down:before {
   content: "\e903";
+  color: rgb(115, 124, 128);
 }
 .icon-up:before {
   content: "\e91c";
+  color: rgb(115, 124, 128);
 }
 .icon-support:before {
   content: "\e900";
@@ -69,7 +71,7 @@
 .icon-app .path2:before {
   content: "\e90a";
   margin-left: -1em;
-  color: rgb(115, 124, 128);
+  /* color: rgb(115, 124, 128); */
 }
 .icon-github .path1:before {
   content: "\e90b";
@@ -87,7 +89,7 @@
 .icon-language .path2:before {
   content: "\e90e";
   margin-left: -1em;
-  color: rgb(115, 124, 128);
+  /* color: rgb(115, 124, 128); */
 }
 .icon-logo-gray:before {
   content: "\e90f";

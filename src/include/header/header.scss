@@ -65,14 +65,21 @@
             .header-top-entry {
                 display: inline-block;
                 cursor: pointer;
-                margin-right: 40px;
-                .icon-app-size {
-                    font-size: 16px;
-                    vertical-align: text-bottom;
+                padding: 0 15px;
+                &:last-child {
+                    margin-right: 15px;
                 }
-                .icon-language-size {
+                &:hover {
+                    background-color: #394a53;
+                    color: #E9E9E9;
+                }
+                .icon-top-left {
                     font-size: 16px;
                     vertical-align: text-bottom;
+                    &:hover .icon-app .path2:before,
+                    .icon-language .path1:before {
+                        color: #E9E9E9;
+                    }
                 }
             }
         }
@@ -112,10 +119,24 @@
             position: relative;
             float: right;
             display: inline-block;
-            margin-right: 30px;
+            margin-right: 15px;
             line-height: 60px;
             font-size: 13px;
             cursor: pointer;
+            .user-box {
+                display: inline-block;
+                height: 40px;
+                line-height: 40px;
+                margin: 10px 0;
+                padding: 0 15px;
+                text-align: center;
+                vertical-align: top;
+                cursor: pointer;
+                &:hover {
+                    background: #394A53;
+                }
+                
+            }
             .user-menu {
                 position: absolute;
                 top: 60px;
