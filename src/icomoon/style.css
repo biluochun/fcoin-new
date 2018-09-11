@@ -89,7 +89,7 @@
 .icon-language .path2:before {
   content: "\e90e";
   margin-left: -1em;
-  /* color: rgb(115, 124, 128); */
+  color: rgb(115, 124, 128);
 }
 .icon-logo-gray:before {
   content: "\e90f";

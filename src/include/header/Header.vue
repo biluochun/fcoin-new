@@ -29,7 +29,7 @@
                     <i class="icon-language icon-top-left">
                         <i class="path1"></i><i class="path2"></i>    
                     </i>
-                    {{langText}}
+                    <span class="text">{{langText}}</span>
                 </span>
             </div>
         </div>

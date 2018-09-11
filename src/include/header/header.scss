@@ -71,16 +71,20 @@
                 }
                 &:hover {
                     background-color: #394a53;
-                    color: #E9E9E9;
+                    .text,
+                    .icon-app .path2:before,
+                    .icon-language .path2:before {
+                        color: #E9E9E9;
+                    }
+                    .icon-language .path1:before {
+                        color: rgb(115, 124, 128);
+                    }
                 }
                 .icon-top-left {
                     font-size: 16px;
                     vertical-align: text-bottom;
-                    &:hover .icon-app .path2:before,
-                    .icon-language .path1:before {
-                        color: #E9E9E9;
-                    }
                 }
+
             }
         }
     }
@@ -139,13 +143,13 @@
                 }
                 &:hover {
                     background: #394A53;
-                    .icon-user .path1:before,
+                    .icon-down,
+                    .icon-up,
                     .icon-user .path2:before {
                         color: #e9e9e9;
                     }
-                    .icon-down,
-                    .icon-up {
-                        color: #e9e9e9;
+                    .icon-user .path1:before {
+                        color: rgb(115, 124, 128);
                     }
                 }
                 
