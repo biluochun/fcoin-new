@@ -23,7 +23,7 @@
                     <i class="icon-app icon-top-left">
                         <i class="path1"></i><i class="path2"></i>    
                     </i>
-                    <span class="text">App下载</span>
+                    <span class="text">{{$t(header.app_select)}}</span>
                 </span>
                 <span class="header-top-entry" @click="showLangBox=!showLangBox">
                     <i class="icon-language icon-top-left">
