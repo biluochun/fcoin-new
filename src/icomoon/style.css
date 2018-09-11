@@ -53,7 +53,7 @@
 }
 .icon-user .path2:before {
   content: "\e908";
-  margin-left: -1em;
+
   color: rgb(115, 124, 128);
 }
 .icon-app .path1:before {
@@ -62,7 +62,7 @@
 }
 .icon-app .path2:before {
   content: "\e90a";
-  margin-left: -1em;
+  
   color: rgb(115, 124, 128);
 }
 .icon-github .path1:before {
@@ -71,7 +71,7 @@
 }
 .icon-github .path2:before {
   content: "\e90c";
-  margin-left: -1em;
+
   color: rgb(47, 61, 69);
 }
 .icon-language .path1:before {
@@ -80,7 +80,6 @@
 }
 .icon-language .path2:before {
   content: "\e90e";
-  margin-left: -1em;
   color: rgb(115, 124, 128);
 }
 .icon-logo-gray:before {
@@ -93,7 +92,6 @@
 }
 .icon-logo .path2:before {
   content: "\e911";
-  margin-left: -4.75em;
   color: rgb(0, 176, 124);
 }
 .icon-medium .path1:before {
@@ -102,7 +100,6 @@
 }
 .icon-medium .path2:before {
   content: "\e913";
-  margin-left: -1em;
   color: rgb(47, 61, 69);
 }
 .icon-reddit .path1:before {
@@ -111,7 +108,6 @@
 }
 .icon-reddit .path2:before {
   content: "\e915";
-  margin-left: -1em;
   color: rgb(47, 61, 69);
 }
 .icon-slack .path1:before {
@@ -120,7 +116,6 @@
 }
 .icon-slack .path2:before {
   content: "\e917";
-  margin-left: -1em;
   color: rgb(47, 61, 69);
 }
 .icon-telegram .path1:before {
@@ -129,7 +124,6 @@
 }
 .icon-telegram .path2:before {
   content: "\e919";
-  margin-left: -1em;
   color: rgb(47, 61, 69);
 }
 .icon-twitter .path1:before {
@@ -138,6 +132,5 @@
 }
 .icon-twitter .path2:before {
   content: "\e91b";
-  margin-left: -1em;
   color: rgb(47, 61, 69);
 }

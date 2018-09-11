@@ -4,7 +4,7 @@
            <div class="container-new fn-clearfix">
                <div class="footer-logo">
                    <a href="/">
-                    <!-- <img src="../img/logo-white.svg" alt=""> -->
+                    <i class="icon-logo-gray"></i>
                    </a>
                    <p>币市有风险，投资需谨慎</p>
                </div>
@@ -35,18 +35,39 @@
                </div>
             </div>  
             <div class="footer-community fn-clearfix">
-                <a href="#"><i class="icon icon-reddit"></i></a>
+                <a href="https://twitter.com/FCoinOfficial">
+                    <i class="icon-twitter">
+                        <i class="path2"></i>
+                    </i>
+                </a>
                 <a href="javascript:;" @mouseover="toggle_language('show')" @mouseout="toggle_language('hide')">
-                    <i></i>
+                    <i class="icon-telegram">
+                        <i class="path2"></i>
+                    </i>
                     <div class="language" ref="toggle_box">
                         <span @click="toggle_current('English')">English</span>
                         <span @click="toggle_current('中文')">中文</span>
                     </div>
                 </a>
-                <a href="#"><i></i></a>
-                <a href="#"><i></i></a>
-                <a href="#"><i></i></a>
-                <a href="#"><i></i></a>
+                <a href="https://github.com/FCoinOfficial">
+                    <i class="icon-github">
+                        <i class="path2"></i>
+                    </i></a>
+                <a href="https://medium.com/@FCoinOfficial" >
+                    <i class="icon-medium">
+                        <i class="path2"></i>
+                    </i>
+                </a>
+                <a href="https://www.reddit.com/user/fcoinoffical/" >
+                    <i class="icon-reddit">
+                        <i class="path2"></i>
+                    </i>
+                </a>
+                <a href="https://fcoinofficial.slack.com">
+                    <i class="icon-slack">
+                        <i class="path2"></i>
+                    </i>
+                </a>
                 <p>Copyright © 2018 FCoin</p>
             </div>  
        </div>
@@ -98,6 +119,9 @@ footer{
                     width: 130px;
                     height: 35px;
                     display: inline-block;
+                    i{
+                        font-size:30px;
+                    }
                 }
                 p{
                     font-family: 'MicrosoftYaHei';
@@ -145,6 +169,10 @@ footer{
                 position: relative;
                 &:hover{
                     background: #fff;
+                }
+                .path2{
+                    font-size:50px;
+                    line-height: 60px;
                 }
                 .language{
                     width: 122px;
