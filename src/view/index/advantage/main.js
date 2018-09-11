@@ -12,7 +12,7 @@ export default {
 
     },
     created() {
-        this.$i18n.locale = 'cn';
+
     },
     data(){
         return {

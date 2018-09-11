@@ -6,6 +6,8 @@
             <advantage></advantage>
             <year></year>
             <app></app>
+            {{$t('advantage.tip1')}}
+            {{$t('common.serverError')}}
         </div>
     </layout>
 </template>

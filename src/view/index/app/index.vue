@@ -1,6 +1,7 @@
 <template>
     <div class="module-app">
         module-app
+        {{$t('app.xxx')}}
     </div>
 </template>
 
