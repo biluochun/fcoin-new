@@ -37,7 +37,7 @@
                     <p class="menu-item">设置</p>
                     <p class="menu-item">退出</p>
                 </div>
-                <span @click="showUserMenu=!showUserMenu">巴斯光年</span>
+                <span @click="showUserMenu=!showUserMenu">巴斯光年老铁</span>
             </div>
         </div>
     </header>
