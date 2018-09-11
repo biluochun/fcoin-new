@@ -26,8 +26,9 @@ footer{
             }
             .footer-new{
                 float: left;
+                display: flex;
                 dl{
-                   float: left;
+                //    float: left;
                    &:first-child,&:nth-child(2),&:nth-child(3){
                        width: 222px;
                    }
