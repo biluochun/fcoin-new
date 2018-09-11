@@ -36,14 +36,17 @@
             position: relative;
             .lang-box {
                 position: absolute;
-                right: 220px;
+                right: 30px;
+                top: 39px;
                 display: inline-block;
                 width: 160px;
                 height: 98px;
                 padding: 5px 0;
+                z-index: 99;
+                -webkit-box-sizing: border-box;
                 box-sizing: border-box;
                 background: #192831;
-                border: 1px solid #14181C;
+                border: 1px solid #14181c;
                 color: #fff;
                 .lang-item {
                     width: 100%;
@@ -86,6 +89,7 @@
                 }
 
             }
+                
         }
     }
     .header-bottom {
