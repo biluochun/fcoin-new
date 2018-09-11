@@ -1,5 +1,5 @@
 <template>
-    <header class="header-container">
+    <header class="module-header">
         <div class="header-top">
             <div class="header-top-left">
                 <span class="header-entry">FT</span>
@@ -11,17 +11,19 @@
             <div class="header-top-right">
                 <div v-if="showLangBox" class="lang-box">
                     <p class="lang-item" @click="changeLang('简体中文')">
-                        <img class="lang-country" src="./img/Chinese.png" alt="">简体中文
+                        <img class="lang-country" src="./img/Chinese.png" alt="">
+                        <span class="text">简体中文</span>
                     </p>
                     <p class="lang-item" @click="changeLang('English')">
-                        <img class="lang-country" src="./img/English.png" alt="">English
+                        <img class="lang-country" src="./img/English.png" alt="">
+                        <span class="text">English</span>
                     </p>
                 </div>
                 <span class="header-top-entry">
                     <i class="icon-app icon-app-size">
                         <i class="path1"></i><i class="path2"></i>    
                     </i>
-                    App下载
+                    <span class="text">App下载</span>
                 </span>
                 <span class="header-top-entry" @click="showLangBox=!showLangBox">
                     <i class="icon-language icon-language-size">
