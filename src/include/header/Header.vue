@@ -36,7 +36,7 @@
                 <!-- <img class="header-logo" src="./logo.svg" alt=""> -->
                 <span class="header-logo">
                     <i class="icon-logo icon-logo-size">
-                        <i class="path1"></i><i class="path2"></i>    
+                        <i class="path1"></i><i class="path2"></i>   
                     </i>
                 </span>
                 <span class="header-exchange-entry">主板交易</span>
