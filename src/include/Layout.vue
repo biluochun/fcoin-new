@@ -13,7 +13,7 @@
 
 <script>
     import Header from './header/Header.vue';
-    import Footer from './Footer';
+    import Footer from './footer/Footer.vue';
 
     export default {
         components: {

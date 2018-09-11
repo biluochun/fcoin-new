@@ -10,9 +10,14 @@ import Banner from './banner/index.vue';
 import Symbols from './symbols/index.vue';
 import Year from './year/index.vue';
 import App from './app/index.vue';
+import lang from './lang';
 
 export default {
     name: 'Index',
+    i18n: {
+        locale: 'cn',
+        messages: lang
+    },
     components: {
         Layout,
         Banner,

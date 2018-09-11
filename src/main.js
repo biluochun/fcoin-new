@@ -14,15 +14,15 @@ let lang = Vue.ls.get('lang', 'en-us');
 //store.commit('setLang',lang);
 
 Vue.use(VueI18n);
-const i18n = new VueI18n({
-    locale: lang,    // 语言标识
-    //locale: 'en-us',
-    //this.$i18n.locale // 通过切换locale的值来实现语言切换
-    messages: {
-        //'zh-cn': require('./lang/zh'),   // 中文语言包
-        //'en-us': require('./lang/en')    // 英文语言包
-    }
-});
+// const i18n = new VueI18n({
+//     locale: lang,    // 语言标识
+//     //locale: 'en-us',
+//     //this.$i18n.locale // 通过切换locale的值来实现语言切换
+//     messages: {
+//         //'zh-cn': require('./lang/zh'),   // 中文语言包
+//         //'en-us': require('./lang/en')    // 英文语言包
+//     }
+// });
 
 let is_closed = process.env.IS_CLOSED;
 router.beforeEach((to, from, next) => {
@@ -38,7 +38,7 @@ router.beforeEach((to, from, next) => {
 new Vue({
     el: '#app',
     router,
-    i18n,
+    // i18n,
     components: {App},
     template: '<App/>'
 });

@@ -1,6 +1,5 @@
 <template>
     <div class="module-app">
-        你好
         {{$t('app.title')}}
     </div>
 </template>
