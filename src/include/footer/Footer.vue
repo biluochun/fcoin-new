@@ -44,9 +44,9 @@
                     <i class="icon-telegram">
                         <i class="path2"></i>
                     </i>
-                    <div class="language" ref="toggle_box">
-                        <span @click="toggle_current('English')">English</span>
-                        <span @click="toggle_current('中文')">中文</span>
+                    <div class="language" v-show="toggleLang">
+                        <span @click="toggle_current('en')">English</span>
+                        <span @click="toggle_current('cn')">中文</span>
                     </div>
                 </a>
                 <a href="https://github.com/FCoinOfficial">

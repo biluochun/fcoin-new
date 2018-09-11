@@ -1,7 +1,7 @@
 export default {
     data() {
         return {
-            
+            toggleLang:false
         }
     },
     created() {
@@ -10,15 +10,16 @@ export default {
     methods: {
         toggle_language(tollge){
             if(tollge=='show'){
-                this.$refs.toggle_box.style.display = 'block'
+                this.toggleLang = true
             }else{
-                this.$refs.toggle_box.style.display = 'none'
+                this.toggleLang = false
             }
             
         },
-        toggle_current(flag){
-            this.$refs.toggle_box.style.display = 'none'
-            console.log(flag)
+        toggle_current(lang){
+            this.toggleLang = false
+            localStorage.setItem('locale', lang)
+            this.$i18n.locale = localStorage.getItem('locale')
         }
     },
 };

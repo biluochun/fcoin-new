@@ -15,7 +15,7 @@ import lang from './lang';
 export default {
     name: 'Index',
     i18n: {
-        locale: 'cn',
+        locale: localStorage.getItem('locale') || 'cn',
         messages: lang
     },
     components: {
@@ -27,11 +27,10 @@ export default {
         App
     },
     created() {
-
     },
     data(){
         return {
-
+           
         }
     },
     methods: {

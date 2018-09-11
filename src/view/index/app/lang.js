@@ -7,7 +7,7 @@
 export default {
 
     en: {
-        title: '这里是英文'
+        title: 'APP'
 
     },
 

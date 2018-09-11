@@ -8,7 +8,7 @@ export default{
         },
         tool:{
             title:'工具',
-            services_item_1: 'App下载',
+            services_item_1: 'app_select',
             services_item_2: 'API文档'
         },
         clause:{
@@ -19,7 +19,7 @@ export default{
         },
         about:{
             title:'About us',
-            services_item_1: '关于FCoin',
+            services_item_1: 'aboutFCoin',
             services_item_2: 'Customer Support',
             services_item_3: 'Contact Us',
         }

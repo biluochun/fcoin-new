@@ -10,7 +10,7 @@ footer{
             border-bottom:1px solid #5C656B;
             .footer-logo{
                 float: left;
-                width: 245px;
+                width: 432px;
                 a{
                     width: 130px;
                     height: 35px;
@@ -30,7 +30,9 @@ footer{
                 float: left;
                 dl{
                    float: left;
-                   margin-left:186px;
+                   &:first-child,&:nth-child(2),&:nth-child(3){
+                       width: 222px;
+                   }
                     dt{
                         margin-bottom:24px;
                         font-size: 14px;
@@ -79,7 +81,6 @@ footer{
                     left:50%;
                     margin-left:-60px;
                     background: #2F3D45;
-                    display: none;
                     span{
                         float: left;
                         width: 102px;
