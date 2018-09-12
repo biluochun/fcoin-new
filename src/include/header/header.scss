@@ -36,14 +36,17 @@
             position: relative;
             .lang-box {
                 position: absolute;
-                right: 220px;
+                right: 30px;
+                top: 39px;
                 display: inline-block;
                 width: 160px;
                 height: 98px;
                 padding: 5px 0;
+                z-index: 99;
+                -webkit-box-sizing: border-box;
                 box-sizing: border-box;
                 background: #192831;
-                border: 1px solid #14181C;
+                border: 1px solid #14181c;
                 color: #fff;
                 .lang-item {
                     width: 100%;
@@ -65,16 +68,28 @@
             .header-top-entry {
                 display: inline-block;
                 cursor: pointer;
-                margin-right: 40px;
-                .icon-app-size {
+                padding: 0 15px;
+                &:last-child {
+                    margin-right: 15px;
+                }
+                &:hover {
+                    background-color: #394a53;
+                    .text,
+                    .icon-app .path2:before,
+                    .icon-language .path2:before {
+                        color: #E9E9E9;
+                    }
+                    .icon-language .path1:before {
+                        color: rgb(115, 124, 128);
+                    }
+                }
+                .icon-top-left {
                     font-size: 16px;
                     vertical-align: text-bottom;
                 }
-                .icon-language-size {
-                    font-size: 16px;
-                    vertical-align: text-bottom;
-                }
+
             }
+                
         }
     }
     .header-bottom {
@@ -112,10 +127,38 @@
             position: relative;
             float: right;
             display: inline-block;
-            margin-right: 30px;
+            margin-right: 15px;
             line-height: 60px;
             font-size: 13px;
             cursor: pointer;
+            .user-box {
+                display: inline-block;
+                height: 40px;
+                line-height: 40px;
+                margin: 10px 0;
+                padding: 0 15px;
+                text-align: center;
+                vertical-align: top;
+                cursor: pointer;
+
+                .icon-down,
+                .icon-up {
+                    color: rgb(115, 124, 128);
+                }
+                &:hover {
+                    background: #394A53;
+                    .icon-down,
+                    .icon-up,
+                    .icon-user .path2:before {
+                        color: #e9e9e9;
+                    }
+                    .icon-user .path1:before {
+                        color: rgb(115, 124, 128);
+                    }
+                }
+                
+                
+            }
             .user-menu {
                 position: absolute;
                 top: 60px;

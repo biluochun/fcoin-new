@@ -26,9 +26,11 @@
 
 .icon-down:before {
   content: "\e903";
+  /* color: rgb(115, 124, 128); */
 }
 .icon-up:before {
   content: "\e91c";
+  /* color: rgb(115, 124, 128); */
 }
 .icon-support:before {
   content: "\e900";
@@ -68,6 +70,7 @@
 .icon-app .path2:before {
   content: "\e90a";
   color: rgb(115, 124, 128);
+  margin-left: -1em;
 }
 .icon-github .path1:before {
   content: "\e90b";
