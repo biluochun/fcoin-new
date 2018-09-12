@@ -23,10 +23,16 @@ import swiperBanner from '../../../component/Swiper'
             }],
             bannerlist:[{
                 img:require('./banner.jpg'),
-                url:'javascript:;'
+                url:'javascript:;',
+                voteTitle:'FCandy提案决策投票',
+                voteTimer:'投票时间为：8月27日18：00（GMT+8）至8月28日18：00（GMT+8)',
+                partIn:'javascript:;'
             },{
                 img:require('./banner.png'),
-                url:'javascript:;'
+                url:'javascript:;',
+                voteTitle:'FCoin提案决策投票',
+                voteTimer:'投票时间为：10月10日18：00（GMT+8）至8月28日18：00（GMT+8)',
+                partIn:'javascript:;'
             }],
         }
     },
