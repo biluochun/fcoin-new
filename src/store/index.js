@@ -12,7 +12,7 @@ const store = new Vuex.Store({
   mutations: {
     setLang(state, lang){
       state.lang = lang
-
+      
     },
     setUsername(state, username){
       state.username = username

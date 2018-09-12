@@ -131,6 +131,24 @@
             line-height: 60px;
             font-size: 13px;
             cursor: pointer;
+            .login-btn{
+                display: flex;
+                .btn{
+                    width: 108px;
+                    height: 60px;
+                    text-align: center;
+                    line-height: 60px;
+                    .link{
+                        width: 100%;
+                        height: 100%;
+                        display:block;
+                        color:#E9E9E9;
+                        &:hover{
+                            background: #00B07C;
+                        }
+                    }
+                }
+            }
             .user-box {
                 display: inline-block;
                 height: 40px;
@@ -170,6 +188,7 @@
                 background: #192831;
                 border: 1px solid #14181C;
                 color: #E9E9E9;
+                z-index: 100;
                 .menu-item {
                     width: 100%;
                     height: 40px;

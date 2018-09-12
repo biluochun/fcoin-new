@@ -54,13 +54,17 @@
                     <p class="menu-item">设置</p>
                     <p class="menu-item">退出</p>
                 </div>
-                <span class="user-box" @click="showUserMenu=!showUserMenu">
+                <span class="user-box" @click="showUserMenu=!showUserMenu" style="display:none;">
                     <i class="icon-user icon-user-size">
-                        <i class="path2"></i>    
+                       <i class="path2"></i>  
                     </i>
                     <span class="user-name">巴斯光年</span> 
                     <i :class="[{'icon-down icon-up-down':!showUserMenu},{'icon-up icon-up-down':showUserMenu}]"></i>
                 </span>
+                <ul class="login-btn">
+                    <li class="btn"><a class="link" href="javascript:;">登录</a></li>
+                    <li class="btn"><a class="link" href="javascript:;">注册</a></li>
+                </ul>
             </div>
         </div>
     </header>
