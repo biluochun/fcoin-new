@@ -7,12 +7,12 @@
 export default {
 
     en: {
-        xxx: '这里是英文'
+        title: 'APP'
 
     },
 
     cn: {
-        xxx: '这里是中文'
+        title: '这里是中文'
 
     }
 

@@ -1,5 +1,87 @@
-
-.module-advantage {
-    height: 200px;
-    border: 1px solid red;
+/**
+ * @file
+ * @author fuheyong
+ * @date 2018/9/12 上午10:00
+ */
+.module-banner {
+    position: relative;
+   .banner-title{
+       position: absolute;
+       top:0;
+       left:0;
+       padding-top:80px;
+       width: 100%;
+       text-align: center;
+       z-index: 99;
+       .vote-title{
+        color:#E9E9E9;
+        font: 28px 'MicrosoftYaHei';
+        font-weight: normal;
+        margin-bottom:20px;
+       }
+       .vote-timer{
+           font-size: 16px;
+           color:#737C80;
+       }
+       .part-in{
+           .link{
+                width: 110px;
+                height: 26px;
+                font-size:14px;
+                color:#E9E9E9;
+                text-align: center;
+                border-bottom:2px solid #E9E9E9;
+                position: absolute;
+                top:130%;
+                left:50%;
+                transform: translate(-50%,0);
+                color:#E9E9E9;
+                &:hover{
+                    border-bottom:2px solid #00B07C;
+                }
+           }
+           .go{
+               margin-left:10px;
+               font-size:10px;
+           }
+       }
+   }
+   .banner-notice{
+       position: absolute;
+       top:0;
+       right:0;
+       z-index: 99;
+       width:320px;
+       height: 100%;
+       .notice-item{
+            width: 100%;
+            height: 160px;
+            opacity: 0.25;
+            padding:30px 30px 0 20px;
+            box-sizing: border-box;
+            .notice-title{
+                height: 34px;
+                color:#737C80;
+                font-size:14px;
+                font-weight: normal;
+            }
+            .notice-list{
+                overflow: hidden;
+                text-overflow:ellipsis;
+                white-space: nowrap;
+            }
+            .link{
+                color:#E9E9E9;
+                font-size: 14px;
+                height: 30px;
+                display: inline-block;
+            }
+       }
+       .community{
+        background-image: linear-gradient(-131deg, #00A789, #14514D);
+       }
+       .platform{
+        background-image: linear-gradient(-135deg, #42C4C0, #285A5E);
+       }
+   }
 }

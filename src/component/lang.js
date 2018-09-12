@@ -10,7 +10,7 @@ export default {
         alert: {
             tip: '提示',
             sure: '确定', 
-            cancel: '取消'
+            cancel: '取消'   
         },
         confirm: {
 

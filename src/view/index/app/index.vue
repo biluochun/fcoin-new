@@ -1,6 +1,6 @@
 <template>
     <div class="module-app">
-        module-app
+        {{$t('app.title')}}
     </div>
 </template>
 
