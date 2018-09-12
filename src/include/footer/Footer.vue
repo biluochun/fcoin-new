@@ -80,5 +80,5 @@
     export default vm
 </script>
 <style lang="scss">
-@import './footer.scss'
+@import './footer.scss';
 </style>

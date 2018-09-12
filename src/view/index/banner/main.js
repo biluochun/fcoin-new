@@ -43,7 +43,7 @@ export default {
                 page: 1,
                 pageSize: 5,
             }).then(rep => {
-                debugger;
+                // debugger;
             });
         }
     }
