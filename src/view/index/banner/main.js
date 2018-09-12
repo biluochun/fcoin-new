@@ -3,40 +3,38 @@
  * @author fuheyong
  * @date 2018/9/12 上午10:00
  */
-
 import swiperBanner from '../../../component/Swiper';
 import service from '../service';
 
 export default {
     name: 'Banner',
-
-    components: {},
+    components: {
+        swiperBanner
+    },
     created() {
         //this.getbanner()
-        /*
-        this.get_announcements('community_governance');
-        this.get_announcements('main');
-         */
         this._fetchNotice('main');
     },
     data() {
         return {
-            communitylist: [{
-                html_url: 'javascript:;',
-                title: '[09-02]FI社区启动公投及继续停牌申请[09-02]FI社区启动公投及继续停牌申请'
-            }, {
-                html_url: 'javascript:;',
-                title: '[09-02]FI社区启动公投及继续停牌申请'
-            }],
-            bannerlist: [{
-                img: require('./banner.jpg'),
-                url: 'javascript:;'
-            }, {
-                img: require('./banner.png'),
-                url: 'javascript:;'
-            }],
             mainAnnouncementList: [],
-            communityAnnouncementList: []
+            communityAnnouncementList: [],
+
+            bannerList: [
+                {
+                    img: require('./img/banner.jpg'),
+                    url: 'javascript:;',
+                    voteTitle: 'FCandy提案决策投票',
+                    voteTimer: '投票时间为：8月27日18：00（GMT+8）至8月28日18：00（GMT+8)',
+                    partIn: 'javascript:;'
+                }, {
+                    img: require('./img/banner.png'),
+                    url: 'javascript:;',
+                    voteTitle: 'FCoin提案决策投票',
+                    voteTimer: '投票时间为：10月10日18：00（GMT+8）至8月28日18：00（GMT+8)',
+                    partIn: 'javascript:;'
+                }
+            ],
         }
     },
     methods: {
