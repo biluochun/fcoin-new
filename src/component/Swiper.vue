@@ -1,5 +1,5 @@
 <template>
-        <swiper :options="swiperOption" ref="awesomeSwiper" v-if="bannerlist.length" @mouseover="isflag">
+        <swiper :options="swiperOption" ref="awesomeSwiper" v-if="bannerlist.length">
             <swiper-slide v-for='(item,index) in bannerlist' :key='index'>
                 <a :href="item.url">
                     <img :src="item.img" alt="" width="100%">
@@ -29,6 +29,13 @@ export default {
             default:[]
         }
     },
+    components:{
+        swiper,
+        swiperSlide
+    },
+    created(){
+        this.isAutoplay()
+    },
     data(){
         return{
             swiperOption: {
@@ -56,9 +63,6 @@ export default {
             }
         }
     },
-    created(){
-        this.isAutoplay()
-    },
     methods:{
         isAutoplay(){
            if(this.bannerlist.length>1){
@@ -70,14 +74,7 @@ export default {
            }else{
                 this.swiperOption.autoplay = false 
            }
-       },
-       isflag(){
-           console.log(222)
        }
-    },
-    components:{
-        swiper,
-        swiperSlide
     }
     
 }

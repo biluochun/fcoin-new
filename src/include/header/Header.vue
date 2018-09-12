@@ -21,13 +21,14 @@
                 </div>
                 <span class="header-top-entry">
                     <i class="icon-app icon-top-left">
-                        <i class="path1"></i><i class="path2"></i>    
+                        <i class="path2"></i>    
                     </i>
-                    <span class="text">{{$t(header.app_select)}}</span>
+                    <span>App下载</span>
+                    <!-- <span class="text">{{$t(header.app_select)}}</span> -->
                 </span>
                 <span class="header-top-entry" @click="showLangBox=!showLangBox">
                     <i class="icon-language icon-top-left">
-                        <i class="path1"></i><i class="path2"></i>    
+                        <i class="path2"></i>    
                     </i>
                     <span class="text">{{langText}}</span>
                 </span>
@@ -55,11 +56,10 @@
                 </div>
                 <span class="user-box" @click="showUserMenu=!showUserMenu">
                     <i class="icon-user icon-user-size">
-                        <i class="path1"></i><i class="path2"></i>    
+                        <i class="path2"></i>    
                     </i>
                     <span class="user-name">巴斯光年</span> 
-                    <i v-if="!showUserMenu" class="icon-down icon-up-down"></i>
-                    <i v-if="showUserMenu" class="icon-up icon-up-down"></i>
+                    <i :class="[{'icon-down icon-up-down':!showUserMenu},{'icon-up icon-up-down':showUserMenu}]"></i>
                 </span>
             </div>
         </div>

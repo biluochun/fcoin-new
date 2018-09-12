@@ -7,7 +7,7 @@ import swiperBanner from '../../../component/Swiper'
  export default {
     name: 'Banner',
     components: {
-
+        swiperBanner
     },
     created() {
         //this.getbanner()
@@ -41,9 +41,5 @@ import swiperBanner from '../../../component/Swiper'
     },
     methods: {
        
-    },
-    components:{
-        swiperBanner
     }
-
 }
