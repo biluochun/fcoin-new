@@ -1,3 +1,4 @@
+
 <template>
     <footer class="module-footer">
        <div class="layout-container">
