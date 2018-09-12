@@ -12,8 +12,8 @@ export default {
         swiperBanner
     },
     created() {
-        //this.getbanner()
-        this._fetchNotice('main');
+        this._fetchMainNotice();
+        this._fetchCommunityNotice();
     },
     data() {
         return {
@@ -38,13 +38,28 @@ export default {
         }
     },
     methods: {
-        _fetchNotice(type) {
+        _fetchMainNotice(type) {
             service.getAnnouncement({
                 page: 1,
-                pageSize: 5,
+                pageSize: 3,
+                type: 'main',
             }).then(rep => {
-                // debugger;
+                if (rep.status === 'ok') {
+                    this.mainAnnouncementList = rep.data.content;
+                }
             });
-        }
+        },
+
+        _fetchCommunityNotice(type) {
+            service.getAnnouncement({
+                page: 1,
+                pageSize: 3,
+                type: 'community_governance'
+            }).then(rep => {
+                if (rep.status === 'ok') {
+                    this.communityAnnouncementList = rep.data.content;
+                }
+            });
+        },
     }
 }
