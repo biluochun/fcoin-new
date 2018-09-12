@@ -1,5 +1,5 @@
 export default {
-    name: 'Header',
+    name: 'App',
     data() {
         return {
             showLangBox: false,
@@ -14,6 +14,7 @@ export default {
         changeLang(str) {
             this.langText = str
             this.showLangBox = false
+            this.$store.commit('setLang','cn-zh')
         }
     },
-}; 
+};

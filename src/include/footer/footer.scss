@@ -1,0 +1,104 @@
+/**
+ * @file
+ * @author fuheyong
+ * @date 2018/9/11 下午2:00
+ */
+.module-footer{
+    width: 100%;
+    background:$color-bg-gray;
+    height: 410px;
+    .layout-container{
+        .container-info{
+            padding:60px 0 30px 0;
+            border-bottom:1px solid #5C656B;
+            .footer-logo{
+                float: left;
+                width: 432px;
+                .link{
+                    width: 130px;
+                    height: 35px;
+                    display: inline-block;
+                }
+                .remind{
+                    font-family: 'MicrosoftYaHei';
+                    font-size: 12px;
+                    color: #737C80;
+                    margin-top:50px;
+                }
+            }
+            .footer-left{
+                float: left;
+                display: flex;
+                width: 768px;
+                justify-content:space-between;
+                .dl{
+                    .dt{
+                        margin-bottom:24px;
+                        font-size: 14px;
+                        color: #E9E9E9;
+                    }
+                    .dd{
+                        height: 30px;
+                        line-height: 30px;
+                        color:#737c80;
+                        .link{
+                            color:#737c80;
+                            &:hover{
+                                color:#E9E9E9;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .footer-community{
+            padding-top:60px;
+            text-align: center;
+            a{
+                width: 60px;
+                height: 60px;
+                margin:0 20px;
+                background: #5C656B;
+                display: inline-block;
+                border-radius: 50%;
+                text-align: center;
+                line-height: 60px;
+                position: relative;
+                &:hover{
+                    background: #fff;
+                }
+                .path2{
+                    font-size:50px;
+                    line-height: 60px;
+                }
+                .language{
+                    width: 122px;
+                    height: 82px;
+                    border:1px solid #14181C;
+                    position: absolute;
+                    bottom:60px;
+                    left:50%;
+                    margin-left:-60px;
+                    background: #2F3D45;
+                    span{
+                        float: left;
+                        width: 102px;
+                        height: 41px;
+                        text-align: left;
+                        line-height: 40px;
+                        padding-left:20px;
+                        color:#E9E9E9;
+                        &:hover{
+                            background: #14181c;
+                        }
+                    }
+                }
+            }
+            .footer-bottom{
+                padding-top: 24px;
+                color:#737C80;
+                font-size: 14px;
+            }
+        }
+    }
+}

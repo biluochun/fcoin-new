@@ -4,6 +4,74 @@
     {
       "icon": {
         "paths": [
+          "M1023.2 256.9h-1020l510 510.1 510-510.1z"
+        ],
+        "attrs": [
+          {}
+        ],
+        "isMulticolor": false,
+        "isMulticolor2": false,
+        "grid": 0,
+        "tags": [
+          "down"
+        ],
+        "colorPermutations": {
+          "11512412811761241233233233147616917988931921011071": [
+            {}
+          ]
+        }
+      },
+      "attrs": [
+        {}
+      ],
+      "properties": {
+        "order": 200,
+        "id": 19,
+        "name": "down",
+        "prevSize": 32,
+        "code": 59651
+      },
+      "setIdx": 1,
+      "setId": 4,
+      "iconIdx": 0
+    },
+    {
+      "icon": {
+        "paths": [
+          "M513.92 193.92l470.4 470.4h-940.8l470.4-470.4z"
+        ],
+        "attrs": [
+          {}
+        ],
+        "isMulticolor": false,
+        "isMulticolor2": false,
+        "grid": 0,
+        "tags": [
+          "up"
+        ],
+        "colorPermutations": {
+          "11512412811761241233233233147616917988931921011071": [
+            {}
+          ]
+        }
+      },
+      "attrs": [
+        {}
+      ],
+      "properties": {
+        "order": 201,
+        "id": 18,
+        "name": "up",
+        "prevSize": 32,
+        "code": 59676
+      },
+      "setIdx": 1,
+      "setId": 4,
+      "iconIdx": 1
+    },
+    {
+      "icon": {
+        "paths": [
           "M512 153.6c197.939 0 358.4 160.461 358.4 358.4v0c-1.551 37.249-9.496 72.222-22.761 104.444l0.745-2.044c-20.484 52.377-32.639 112.996-33.278 176.372l-0.002 0.268v79.36h-303.104c-197.939 0-358.4-160.461-358.4-358.4s160.461-358.4 358.4-358.4v0zM512 0c-282.77 0-512 229.23-512 512s229.23 512 512 512v0h447.488v-185.856c-0-150.528 64.512-192 64.512-326.144 0-282.77-229.23-512-512-512v0z"
         ],
         "attrs": [
@@ -31,15 +99,15 @@
         }
       ],
       "properties": {
-        "order": 156,
+        "order": 177,
         "id": 17,
         "name": "support",
         "prevSize": 32,
         "code": 59648
       },
-      "setIdx": 0,
+      "setIdx": 1,
       "setId": 4,
-      "iconIdx": 0
+      "iconIdx": 2
     },
     {
       "icon": {
@@ -72,15 +140,15 @@
         }
       ],
       "properties": {
-        "order": 159,
+        "order": 184,
         "id": 16,
         "name": "more",
         "prevSize": 32,
         "code": 59649
       },
-      "setIdx": 0,
+      "setIdx": 1,
       "setId": 4,
-      "iconIdx": 1
+      "iconIdx": 3
     },
     {
       "icon": {
@@ -132,42 +200,15 @@
         }
       ],
       "properties": {
-        "order": 161,
+        "order": 183,
         "id": 15,
         "name": "exchange",
         "prevSize": 32,
         "code": 59650
       },
-      "setIdx": 0,
+      "setIdx": 1,
       "setId": 4,
-      "iconIdx": 2
-    },
-    {
-      "icon": {
-        "paths": [],
-        "attrs": [],
-        "width": 15360,
-        "isMulticolor": false,
-        "isMulticolor2": false,
-        "grid": 0,
-        "tags": [
-          "时间轴"
-        ],
-        "colorPermutations": {
-          "11512412811761241233233233147616917988931921011071": []
-        }
-      },
-      "attrs": [],
-      "properties": {
-        "order": 175,
-        "id": 14,
-        "name": "7",
-        "prevSize": 32,
-        "code": 59651
-      },
-      "setIdx": 0,
-      "setId": 4,
-      "iconIdx": 3
+      "iconIdx": 4
     },
     {
       "icon": {
@@ -193,15 +234,15 @@
         {}
       ],
       "properties": {
-        "order": 165,
+        "order": 188,
         "id": 13,
         "name": "search",
         "prevSize": 32,
         "code": 59652
       },
-      "setIdx": 0,
+      "setIdx": 1,
       "setId": 4,
-      "iconIdx": 4
+      "iconIdx": 6
     },
     {
       "icon": {
@@ -233,15 +274,15 @@
         }
       ],
       "properties": {
-        "order": 166,
+        "order": 189,
         "id": 12,
-        "name": "4",
+        "name": "star",
         "prevSize": 32,
         "code": 59653
       },
-      "setIdx": 0,
+      "setIdx": 1,
       "setId": 4,
-      "iconIdx": 5
+      "iconIdx": 7
     },
     {
       "icon": {
@@ -273,15 +314,15 @@
         }
       ],
       "properties": {
-        "order": 167,
+        "order": 190,
         "id": 11,
         "name": "star-active",
         "prevSize": 32,
         "code": 59654
       },
-      "setIdx": 0,
+      "setIdx": 1,
       "setId": 4,
-      "iconIdx": 6
+      "iconIdx": 8
     },
     {
       "icon": {
@@ -323,7 +364,7 @@
         }
       ],
       "properties": {
-        "order": 168,
+        "order": 191,
         "id": 10,
         "name": "user",
         "prevSize": 32,
@@ -333,9 +374,9 @@
           59656
         ]
       },
-      "setIdx": 0,
+      "setIdx": 1,
       "setId": 4,
-      "iconIdx": 7
+      "iconIdx": 9
     },
     {
       "icon": {
@@ -377,7 +418,7 @@
         }
       ],
       "properties": {
-        "order": 169,
+        "order": 192,
         "id": 9,
         "name": "app",
         "prevSize": 32,
@@ -387,9 +428,9 @@
           59658
         ]
       },
-      "setIdx": 0,
+      "setIdx": 1,
       "setId": 4,
-      "iconIdx": 8
+      "iconIdx": 10
     },
     {
       "icon": {
@@ -431,7 +472,7 @@
         }
       ],
       "properties": {
-        "order": 170,
+        "order": 193,
         "id": 8,
         "name": "github",
         "prevSize": 32,
@@ -441,9 +482,9 @@
           59660
         ]
       },
-      "setIdx": 0,
+      "setIdx": 1,
       "setId": 4,
-      "iconIdx": 9
+      "iconIdx": 11
     },
     {
       "icon": {
@@ -485,7 +526,7 @@
         }
       ],
       "properties": {
-        "order": 171,
+        "order": 194,
         "id": 7,
         "name": "language",
         "prevSize": 32,
@@ -495,9 +536,9 @@
           59662
         ]
       },
-      "setIdx": 0,
+      "setIdx": 1,
       "setId": 4,
-      "iconIdx": 10
+      "iconIdx": 12
     },
     {
       "icon": {
@@ -540,15 +581,15 @@
         }
       ],
       "properties": {
-        "order": 172,
+        "order": 195,
         "id": 6,
         "name": "logo-gray",
         "prevSize": 32,
         "code": 59663
       },
-      "setIdx": 0,
+      "setIdx": 1,
       "setId": 4,
-      "iconIdx": 11
+      "iconIdx": 13
     },
     {
       "icon": {
@@ -591,7 +632,7 @@
         }
       ],
       "properties": {
-        "order": 173,
+        "order": 179,
         "id": 5,
         "name": "logo",
         "prevSize": 32,
@@ -601,9 +642,9 @@
           59665
         ]
       },
-      "setIdx": 0,
+      "setIdx": 1,
       "setId": 4,
-      "iconIdx": 12
+      "iconIdx": 14
     },
     {
       "icon": {
@@ -645,7 +686,7 @@
         }
       ],
       "properties": {
-        "order": 157,
+        "order": 180,
         "id": 4,
         "name": "medium",
         "prevSize": 32,
@@ -655,9 +696,9 @@
           59667
         ]
       },
-      "setIdx": 0,
+      "setIdx": 1,
       "setId": 4,
-      "iconIdx": 13
+      "iconIdx": 15
     },
     {
       "icon": {
@@ -699,7 +740,7 @@
         }
       ],
       "properties": {
-        "order": 158,
+        "order": 181,
         "id": 3,
         "name": "reddit",
         "prevSize": 32,
@@ -709,9 +750,9 @@
           59669
         ]
       },
-      "setIdx": 0,
+      "setIdx": 1,
       "setId": 4,
-      "iconIdx": 14
+      "iconIdx": 16
     },
     {
       "icon": {
@@ -753,7 +794,7 @@
         }
       ],
       "properties": {
-        "order": 160,
+        "order": 185,
         "id": 2,
         "name": "slack",
         "prevSize": 32,
@@ -763,9 +804,9 @@
           59671
         ]
       },
-      "setIdx": 0,
+      "setIdx": 1,
       "setId": 4,
-      "iconIdx": 15
+      "iconIdx": 17
     },
     {
       "icon": {
@@ -807,7 +848,7 @@
         }
       ],
       "properties": {
-        "order": 162,
+        "order": 186,
         "id": 1,
         "name": "telegram",
         "prevSize": 32,
@@ -817,9 +858,9 @@
           59673
         ]
       },
-      "setIdx": 0,
+      "setIdx": 1,
       "setId": 4,
-      "iconIdx": 16
+      "iconIdx": 18
     },
     {
       "icon": {
@@ -861,7 +902,7 @@
         }
       ],
       "properties": {
-        "order": 164,
+        "order": 187,
         "id": 0,
         "name": "twitter",
         "prevSize": 32,
@@ -871,9 +912,9 @@
           59675
         ]
       },
-      "setIdx": 0,
+      "setIdx": 1,
       "setId": 4,
-      "iconIdx": 17
+      "iconIdx": 19
     }
   ],
   "height": 1024,
@@ -889,14 +930,19 @@
     "fontPref": {
       "prefix": "icon-",
       "metadata": {
-        "fontFamily": "icomoon"
+        "fontFamily": "icomoon",
+        "majorVersion": 1,
+        "minorVersion": 0
       },
       "metrics": {
         "emSize": 1024,
         "baseline": 6.25,
         "whitespace": 50
       },
-      "embed": false
+      "embed": false,
+      "showSelector": false,
+      "showMetrics": false,
+      "showMetadata": false
     },
     "imagePref": {
       "prefix": "icon-",
@@ -907,6 +953,7 @@
       "name": "icomoon",
       "classSelector": ".icon"
     },
-    "historySize": 50
+    "historySize": 50,
+    "gridSize": 16
   }
 }

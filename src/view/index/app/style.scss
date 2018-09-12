@@ -1,5 +1,29 @@
 
 .module-app {
-    height: 200px;
-    border: 1px solid red;
+    .app-container{
+        width: 1200px;
+        height: 570px;
+        position: relative;
+        background: url(./img/app_down_bg.png) no-repeat top center;
+        .down-icon{
+           position:absolute;
+           left:680px;
+           top:232px;
+        }
+        .app-title{
+            position:absolute;
+            left:680px;
+            top:312px;
+            .app-text{
+                font: 24px 'MicrosoftYaHei';
+                color:#E9E9E9;
+            }
+            .app-system{
+                margin-top:12px;
+                font:12px 'MicrosoftYaHei';
+                color:#737C80;;
+            }
+        }
+       
+    }
 }

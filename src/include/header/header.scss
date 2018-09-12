@@ -1,18 +1,24 @@
-.header-container {
+/**
+ * @file
+ * @auth liujikuan@fcoin.com
+ * @date 2018/9/11
+ */
+
+.module-header {
     width: 100%;
     color: #737C80;
-    background-color: #2F3D45;
+    background-color:$color-bg-gray;
     .header-top {
         width: 100%;
         height: 39px;
-        line-height: 16px;
-        border-bottom: 1px solid #15232C;
+        line-height: 39px;
+        border-bottom: 1px solid $color-border-dark;
         font-size: 13px;
         .header-top-left {
             display: inline-block;
             .header-entry {
                 display: inline-block;
-                padding: 12px 15px 11px 15px;
+                padding: 0 15px;
                 cursor: pointer;
                 &:first-child {
                     padding-left: 27px;    
@@ -30,32 +36,60 @@
             position: relative;
             .lang-box {
                 position: absolute;
-                right: 220px;
+                right: 30px;
+                top: 39px;
                 display: inline-block;
                 width: 160px;
                 height: 98px;
                 padding: 5px 0;
+                z-index: 100;
+                -webkit-box-sizing: border-box;
                 box-sizing: border-box;
                 background: #192831;
-                border: 1px solid #14181C;
-                // vertical-align: top;
+                border: 1px solid #14181c;
                 color: #fff;
                 .lang-item {
                     width: 100%;
                     height: 40px;
                     line-height: 40px;
                     margin: 5px 0;
-                    text-align: center;
                     &:hover {
                         background: #2F3D45;
+                    }
+                    .lang-country {
+                        width: 22px;
+                        height: 14px;
+                        line-height: 40px;
+                        margin: -2px 20px;
+
                     }
                 }
             }
             .header-top-entry {
                 display: inline-block;
-                margin: 12px 30px 11px 0px;
                 cursor: pointer;
+                padding: 0 15px;
+                &:last-child {
+                    margin-right: 15px;
+                }
+                &:hover {
+                    background-color: #394a53;
+                    .text,
+                    .icon-app .path2:before,
+                    .icon-language .path2:before {
+                        color: #E9E9E9;
+                    }
+                    .icon-language .path1:before {
+                        color: rgb(115, 124, 128);
+                    }
+                }
+                .icon-top-left {
+                    font-size: 16px;
+                    vertical-align: text-bottom;
+                }
+
             }
+                
         }
     }
     .header-bottom {
@@ -68,8 +102,12 @@
             .header-logo {
                 width: 133px;
                 height: 28px;
-                margin: 18px 0 0 30px;
+                margin: 16px 0 0 30px;
                 cursor: pointer;
+                display: inline-block;
+                .icon-logo-size {
+                    font-size: 28px;
+                }
             }
             .header-exchange-entry {
                 display: inline-block;
@@ -89,10 +127,56 @@
             position: relative;
             float: right;
             display: inline-block;
-            margin-right: 30px;
+            margin-right: 15px;
             line-height: 60px;
             font-size: 13px;
             cursor: pointer;
+            .login-btn{
+                display: flex;
+                .btn{
+                    width: 108px;
+                    height: 60px;
+                    text-align: center;
+                    line-height: 60px;
+                    .link{
+                        width: 100%;
+                        height: 100%;
+                        display:block;
+                        color:#E9E9E9;
+                        &:hover{
+                            background: #00B07C;
+                        }
+                    }
+                }
+            }
+            .user-box {
+                display: inline-block;
+                height: 40px;
+                line-height: 40px;
+                margin: 10px 0;
+                padding: 0 15px;
+                text-align: center;
+                vertical-align: top;
+                cursor: pointer;
+
+                .icon-down,
+                .icon-up {
+                    color: rgb(115, 124, 128);
+                }
+                &:hover {
+                    background: #394A53;
+                    .icon-down,
+                    .icon-up,
+                    .icon-user .path2:before {
+                        color: #e9e9e9;
+                    }
+                    .icon-user .path1:before {
+                        color: rgb(115, 124, 128);
+                    }
+                }
+                
+                
+            }
             .user-menu {
                 position: absolute;
                 top: 60px;
@@ -104,6 +188,7 @@
                 background: #192831;
                 border: 1px solid #14181C;
                 color: #E9E9E9;
+                z-index: 100;
                 .menu-item {
                     width: 100%;
                     height: 40px;
@@ -115,10 +200,20 @@
                     }
                 }
             }
+            .icon-user-size {
+                font-size: 16px;
+                margin-right: 6px;
+                vertical-align: text-bottom;
+            }
+            .icon-up-down {
+                margin-left: 10px;
+                vertical-align: middle;
+            }
+            
         }
     }
     .header-active-entry {
         background: #394A53;
         color: #E9E9E9;
     }
-} 
+}
