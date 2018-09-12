@@ -5,7 +5,7 @@
            <div class="container-info fn-clearfix">
                <div class="footer-logo">
                    <a href="/" class="link">
-                    <i class="icon-logo-gray"></i>
+                     <img src="./logo-white.svg" alt="">
                    </a>
                    <p class="remind">币市有风险，投资需谨慎</p>
                </div>

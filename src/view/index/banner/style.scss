@@ -1,4 +1,8 @@
-
+/**
+ * @file
+ * @author fuheyong
+ * @date 2018/9/12 上午10:00
+ */
 .module-banner {
     position: relative;
    .banner-title{
@@ -60,6 +64,11 @@
                 color:#737C80;
                 font-size:14px;
                 font-weight: normal;
+            }
+            .notice-list{
+                overflow: hidden;
+                text-overflow:ellipsis;
+                white-space: nowrap;
             }
             .link{
                 color:#E9E9E9;

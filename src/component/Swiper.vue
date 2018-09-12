@@ -1,6 +1,6 @@
 <template>
     <swiper :options="swiperOption" ref="awesomeSwiper" v-if="bannerlist.length">
-            <swiper-slide v-for='(item,index) in bannerlist' :key='item.index'>
+            <swiper-slide v-for='(item,index) in bannerlist' :key='index'>
             <a :href="item.url">
                 <img :src="item.img" alt="" width="100%">
             </a>
@@ -9,6 +9,11 @@
       </swiper>
 </template>
 <script>
+/**
+ * @file
+ * @author fuheyong
+ * @date 2018/9/12 上午10:00
+ */
 import 'swiper/dist/css/swiper.css'
 import { swiper, swiperSlide } from 'vue-awesome-swiper'
 export default {
