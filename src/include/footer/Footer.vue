@@ -72,6 +72,7 @@
                 <p class="footer-bottom">Copyright © 2018 FCoin</p>
             </div>  
        </div>
+       123321
     </footer>
 </template>
 
