@@ -80,6 +80,9 @@ export default {
                     'Content-Type': 'application/json;charset=UTF-8'
                 }
             }).then(httpRep => {
+                if (httpRep.data.status !== 'ok') {
+                    throw new Error(httpRep.data.err_msg);
+                }
                 resolve(httpRep.data);
             });
         });
@@ -92,6 +95,9 @@ export default {
                 url: url,
                 params,
             }).then((httpRep) => {
+                if (httpRep.data.status !== 'ok') {
+                    throw new Error(httpRep.data.err_msg);
+                }
                 resolve(httpRep.data);
             });
         });
@@ -104,6 +110,9 @@ export default {
                 url: url,
                 params
             }).then((httpRep) => {
+                if (httpRep.data.status !== 'ok') {
+                    throw new Error(httpRep.data.err_msg);
+                }
                 resolve(httpRep.data);
             });
         });

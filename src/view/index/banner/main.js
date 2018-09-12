@@ -42,7 +42,7 @@ export default {
             service.getAnnouncement({
                 page: 1,
                 pageSize: 3,
-                type: 'main'
+                type: 'main',
             }).then(rep => {
                 if (rep.status === 'ok') {
                     this.mainAnnouncementList = rep.data.content;
