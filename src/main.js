@@ -1,6 +1,4 @@
-
 import './scss/base.scss';
-import './icomoon/style.css';
 import Vue from 'vue';
 import App from './App';
 import router from './router';
