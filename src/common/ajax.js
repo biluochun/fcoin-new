@@ -71,45 +71,58 @@ ajax.interceptors.response.use(response => {
 export default {
     
     post(url, data) {
-        return ajax({
-            method: 'post',
-            url: url,
-            data: data,
-            headers: {
-                'Content-Type': 'application/json;charset=UTF-8'
-            }
-        }).then(httpRep => {
-            Promise.resolve(httpRep.data);
+        return new Promise((resolve, reject) => {
+            ajax({
+                method: 'post',
+                url: url,
+                data: data,
+                headers: {
+                    'Content-Type': 'application/json;charset=UTF-8'
+                }
+            }).then(httpRep => {
+                resolve(httpRep.data);
+            });
         });
     },
 
     get(url, params) {
-        return ajax({
-            method: 'get',
-            url: url,
-            params,
-        }).then(httpRep => {
-            Promise.resolve(httpRep.data);
+        return new Promise((resolve, reject) => {
+            ajax({
+                method: 'get',
+                url: url,
+                params,
+            }).then((httpRep) => {
+                resolve(httpRep.data);
+            });
         });
     },
 
     delete(url, params) {
-        return ajax({
-            method: 'delete',
-            url: url,
-            params
+        return new Promise((resolve, reject) => {
+            ajax({
+                method: 'delete',
+                url: url,
+                params
+            }).then((httpRep) => {
+                resolve(httpRep.data);
+            });
         });
     },
 
     put(url, data) {
-        return ajax({
-            method: 'put',
-            url: url,
-            data: $.stringify(data),
-            headers: {
-                'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'
-            }
+        return new Promise((resolve, reject) => {
+            ajax({
+                method: 'put',
+                url: url,
+                data: $.stringify(data),
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'
+                }
+            }).then((httpRep) => {
+                resolve(httpRep.data);
+            });
         });
+
     },
 
     all() {
