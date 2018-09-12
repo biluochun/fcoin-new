@@ -23,6 +23,34 @@
                 </ul>
             </div>
         </div>
+        <div class="banner-tip">
+            <ul class="list">
+                <li class="item">
+                    <div class="item-label">{{$t('banner.circulating')}}</div>
+                    <div class="item-text"></div>
+                </li>
+                <li class="item">
+                    <div class="item-label">{{$t('banner.destruction')}}</div>
+                    <div class="item-text"></div>
+                </li>
+                <li class="item">
+                    <div class="item-label">{{$t('banner.secondary')}}</div>
+                    <div class="item-text"></div>
+                </li>
+                <li class="item">
+                    <div class="item-label">{{$t('banner.yesterday_convert')}}</div>
+                    <div class="item-text"></div>
+                </li>
+                <li class="item">
+                    <div class="item-label">{{$t('banner.week_fci06')}}</div>
+                    <div class="item-text"></div>
+                </li>
+                <li class="item">
+                    <div class="item-label">{{$t('banner.today_income')}}</div>
+                    <div class="item-text"></div>
+                </li>
+            </ul>
+        </div>
     </div>
 </template>
 
