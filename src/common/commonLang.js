@@ -4,8 +4,8 @@
  * @date 2018/9/10 下午8:57
  */
 
- import compLang from '../component/lang';
- import includeLang from '../include/lang';
+import compLang from '../component/lang';
+import includeLang from '../include/lang';
 
 export default {
 
