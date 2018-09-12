@@ -1,36 +1,36 @@
 <template>
-    <footer>
-       <div class="container fn-clearfix">
-           <div class="container-new fn-clearfix">
+    <footer class="module-footer">
+       <div class="layout-container">
+           <div class="container-info fn-clearfix">
                <div class="footer-logo">
-                   <a href="/">
+                   <a href="/" class="link">
                     <i class="icon-logo-gray"></i>
                    </a>
-                   <p>币市有风险，投资需谨慎</p>
+                   <p class="remind">币市有风险，投资需谨慎</p>
                </div>
-               <div class="footer-new">
-                   <dl>
-                       <dt>{{$t('footer.services.title')}}</dt>
-                       <dd><a href="#">{{$t('footer.services.services_item_1')}}</a></dd>
-                       <dd><a href="">{{$t('footer.services.services_item_2')}}</a></dd>
-                       <dd><a href="">{{$t('footer.services.services_item_3')}}</a></dd>
+               <div class="footer-left">
+                   <dl class='dl'>
+                       <dt class='dt'>{{$t('footer.services.title')}}</dt>
+                       <dd class='dd'><a class="link" href="#">{{$t('footer.services.services_item_1')}}</a></dd>
+                       <dd class='dd'><a class="link" href="">{{$t('footer.services.services_item_2')}}</a></dd>
+                       <dd class='dd'><a class="link" href="">{{$t('footer.services.services_item_3')}}</a></dd>
                    </dl>
-                   <dl>
-                       <dt>{{$t('footer.tool.title')}}</dt>
-                       <dd> <a href="">{{$t('footer.tool.services_item_1')}}</a></dd>
-                       <dd> <a href="">{{$t('footer.tool.services_item_2')}}</a></dd>
+                   <dl class='dl'>
+                       <dt class="dt">{{$t('footer.tool.title')}}</dt>
+                       <dd class="dd"> <a class="link" href="">{{$t('footer.tool.services_item_1')}}</a></dd>
+                       <dd class="dd"> <a class="link" href="">{{$t('footer.tool.services_item_2')}}</a></dd>
                    </dl>
-                   <dl>
-                       <dt>{{$t('footer.clause.title')}}</dt>
-                       <dd> <a href="">{{$t('footer.clause.services_item_1')}}</a></dd>
-                       <dd> <a href="">{{$t('footer.clause.services_item_2')}}</a></dd>
-                       <dd> <a href="">{{$t('footer.clause.services_item_3')}}</a></dd>
+                   <dl class='dl'>
+                       <dt class="dt">{{$t('footer.clause.title')}}</dt>
+                       <dd class="dd"> <a class="link" href="">{{$t('footer.clause.services_item_1')}}</a></dd>
+                       <dd class="dd"> <a class="link" href="">{{$t('footer.clause.services_item_2')}}</a></dd>
+                       <dd class="dd"> <a class="link" href="">{{$t('footer.clause.services_item_3')}}</a></dd>
                    </dl>
-                   <dl>
-                       <dt>{{$t('footer.about.title')}}</dt>
-                       <dd><a href="">{{$t('footer.about.services_item_1')}}</a></dd>
-                       <dd><a href="">{{$t('footer.about.services_item_2')}}</a></dd>
-                       <dd><a href="">{{$t('footer.about.services_item_3')}}</a></dd>
+                   <dl class='dl'>
+                       <dt class="dt">{{$t('footer.about.title')}}</dt>
+                       <dd class="dd"><a class="link" href="">{{$t('footer.about.services_item_1')}}</a></dd>
+                       <dd class="dd"><a class="link" href="">{{$t('footer.about.services_item_2')}}</a></dd>
+                       <dd class="dd"><a class="link" href="">{{$t('footer.about.services_item_3')}}</a></dd>
                    </dl>
                </div>
             </div>  
@@ -68,7 +68,7 @@
                         <i class="path2"></i>
                     </i>
                 </a>
-                <p>Copyright © 2018 FCoin</p>
+                <p class="footer-bottom">Copyright © 2018 FCoin</p>
             </div>  
        </div>
     </footer>
