@@ -1,6 +1,6 @@
 <template>
     <div class="module-banner">
-        <swiper-banner :bannerlist='bannerlist'></swiper-banner>
+        <swiper-banner :bannerlist='bannerList'></swiper-banner>
       <div class="banner-notice">
           <div class="notice-item community">
               <h5 class="notice-title">社区治理公告</h5>
