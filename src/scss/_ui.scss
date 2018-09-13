@@ -29,5 +29,15 @@
         opacity: 0.7;
         color: #fff;
     }
+    &--default {
+        //border: 1px $color-link solid;
+        background-color: #fff;
+        color: $color-link;
+        &:hover {
+            background-color: #fff;
+            color: $color-link-hover;
+            border-color: $color-link-hover;
+        }
+    }
 }
 

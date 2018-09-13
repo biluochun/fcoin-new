@@ -7,25 +7,17 @@
 export default {
 
     en: {
-        alert: {
-            tip: '提示',
-            sure: '确定', 
-            cancel: '取消'   
-        },
-        confirm: {
-
-        }
+        confirm: 'Confirm',
+        waiting: 'Waiting',
+        cancel: 'Cancel',
+        success: 'Success',
     },
 
     cn: {
-        alert: {
-            tip: '提示',
-            sure: '确定',
-            cancel: '取消'
-        },
-        confirm: {
-
-        }
+        confirm: '确认',
+        waiting: '请求中',
+        cancel: '取消',
+        success: '成功',
 
     }
 
