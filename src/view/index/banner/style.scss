@@ -5,42 +5,39 @@
  */
 .module-banner {
     position: relative;
-   .banner-notice{
-       position: absolute;
-       top:0;
-       right:0;
-       z-index: 99;
-       width:320px;
-       height: 100%;
-       .notice-item{
+    .banner-notice {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 1;
+        width: 320px;
+        height: 100%;
+        .notice-item {
             width: 100%;
             height: 160px;
-            opacity: 0.25;
-            padding:30px 30px 0 20px;
+            padding: 24px;
             box-sizing: border-box;
-            .notice-title{
-                height: 34px;
-                color:#737C80;
-                font-size:14px;
+            .title {
+                margin-bottom: 16px;
+                color: $color-font-gray;
+                font-size: 13px;
                 font-weight: normal;
             }
-            .notice-list{
-                overflow: hidden;
-                text-overflow:ellipsis;
-                white-space: nowrap;
+            .list {
+                .item {
+                    margin-bottom: 12px;
+                    .link {
+                        display: block;
+                        color: $color-font;
+                    }
+                }
             }
-            .link{
-                color:#E9E9E9;
-                font-size: 14px;
-                height: 30px;
-                display: inline-block;
+            &:first-child {
+                background-color: rgba(0, 167, 132, 0.25);
+            }
+            &:last-child {
+                background-color: rgba(66, 196, 192, 0.25);
             }
         }
-        .community{
-            background-image: linear-gradient(-131deg, #00A789, #14514D);
-        }
-        .platform{
-            background-image: linear-gradient(-135deg, #42C4C0, #285A5E);
-        }
-   }
+    }
 }
