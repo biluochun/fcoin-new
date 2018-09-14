@@ -4,17 +4,21 @@ import App from './App';
 import router from './router';
 import VueLocalStorage from 'vue-ls';
 import VueI18n from 'vue-i18n';
+import vueWechatTitle from 'vue-wechat-title';
+
 import store from './store';
-
-Vue.use(require('vue-wechat-title'));
-Vue.config.productionTip = false;
-Vue.use(VueLocalStorage);
-
-
-let lang = Vue.ls.get('lang', 'en-us');
-store.commit('setLang',lang); 
+import './component/Alert/Alert';
+import './component/Confirm/Confirm';
 
 Vue.use(VueI18n);
+Vue.use(vueWechatTitle);
+Vue.use(VueLocalStorage);
+
+Vue.config.productionTip = false;
+
+let lang = Vue.ls.get('lang', 'en-us');
+store.commit('setLang',lang);
+
 // const i18n = new VueI18n({
 //     locale: lang,    // 语言标识
 //     //locale: 'en-us',

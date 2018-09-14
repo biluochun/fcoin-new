@@ -1,0 +1,11 @@
+<div class="comp-alert-dialog" :id="ALERT_ELEMENT_ID" v-if="visible === true">
+    <modal :title="title" :on-hide="hide" :width="272">
+        <div slot="content">
+            <i class="icon-info"></i>
+            <span class="text" v-html="content"></span>
+        </div>
+        <div slot="footer">
+            <a href="javascript:;" class="ui-btn" @click="callback">{{btnText}}</a>
+        </div>
+    </modal>
+</div>

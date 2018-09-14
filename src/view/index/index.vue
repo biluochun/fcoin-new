@@ -1,13 +1,11 @@
 <template>
-    <layout>
-        <div class="page-index" slot="main">
-            <banner></banner>
-            <symbols></symbols>
-            <advantage></advantage>
-            <year></year>
-            <app></app>
-        </div>
-    </layout>
+    <div class="page-index">
+        <banner></banner>
+        <symbols></symbols>
+        <advantage></advantage>
+        <year></year>
+        <app></app>
+    </div>
 </template>
 
 <style lang='scss'>

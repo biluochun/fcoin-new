@@ -11,27 +11,27 @@
                </div>
                <div class="footer-left">
                    <dl class='dl'>
-                       <dt class='dt'>{{$t('footer.services.title')}}</dt>
-                       <dd class='dd'><a class="link" href="#">{{$t('footer.services.services_item_1')}}</a></dd>
-                       <dd class='dd'><a class="link" href="">{{$t('footer.services.services_item_2')}}</a></dd>
-                       <dd class='dd'><a class="link" href="">{{$t('footer.services.services_item_3')}}</a></dd>
+                       <dt class='dt'>{{$t('services.title')}}</dt>
+                       <dd class='dd'><a class="link" href="#">{{$t('services.services_item_1')}}</a></dd>
+                       <dd class='dd'><a class="link" href="">{{$t('services.services_item_2')}}</a></dd>
+                       <dd class='dd'><a class="link" href="">{{$t('services.services_item_3')}}</a></dd>
                    </dl>
                    <dl class='dl'>
-                       <dt class="dt">{{$t('footer.tool.title')}}</dt>
-                       <dd class="dd"> <a class="link" href="">{{$t('footer.tool.services_item_1')}}</a></dd>
-                       <dd class="dd"> <a class="link" href="">{{$t('footer.tool.services_item_2')}}</a></dd>
+                       <dt class="dt">{{$t('tool.title')}}</dt>
+                       <dd class="dd"> <a class="link" href="">{{$t('tool.services_item_1')}}</a></dd>
+                       <dd class="dd"> <a class="link" href="">{{$t('tool.services_item_2')}}</a></dd>
                    </dl>
                    <dl class='dl'>
-                       <dt class="dt">{{$t('footer.clause.title')}}</dt>
-                       <dd class="dd"> <a class="link" href="">{{$t('footer.clause.services_item_1')}}</a></dd>
-                       <dd class="dd"> <a class="link" href="">{{$t('footer.clause.services_item_2')}}</a></dd>
-                       <dd class="dd"> <a class="link" href="">{{$t('footer.clause.services_item_3')}}</a></dd>
+                       <dt class="dt">{{$t('clause.title')}}</dt>
+                       <dd class="dd"> <a class="link" href="">{{$t('clause.services_item_1')}}</a></dd>
+                       <dd class="dd"> <a class="link" href="">{{$t('clause.services_item_2')}}</a></dd>
+                       <dd class="dd"> <a class="link" href="">{{$t('clause.services_item_3')}}</a></dd>
                    </dl>
                    <dl class='dl'>
-                       <dt class="dt">{{$t('footer.about.title')}}</dt>
-                       <dd class="dd"><a class="link" href="">{{$t('footer.about.services_item_1')}}</a></dd>
-                       <dd class="dd"><a class="link" href="">{{$t('footer.about.services_item_2')}}</a></dd>
-                       <dd class="dd"><a class="link" href="">{{$t('footer.about.services_item_3')}}</a></dd>
+                       <dt class="dt">{{$t('about.title')}}</dt>
+                       <dd class="dd"><a class="link" href="">{{$t('about.services_item_1')}}</a></dd>
+                       <dd class="dd"><a class="link" href="">{{$t('about.services_item_2')}}</a></dd>
+                       <dd class="dd"><a class="link" href="">{{$t('about.services_item_3')}}</a></dd>
                    </dl>
                </div>
             </div>  

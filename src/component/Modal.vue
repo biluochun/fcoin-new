@@ -6,17 +6,17 @@
                 <span class="modal-title">{{ title }}</span>
             </div>
             <div class="content">
-                <slot></slot>
+                <slot name="content"></slot>
             </div>
             <div class="footer">
-                <button type="submit"
-                        class="ui-btn ui-btn--default"
-                        @click="hide">{{ $t('common.comp.cancel') }}
-                </button>
-                <button type="submit"
-                        class="ui-btn"
-                        @click="submit">{{ $t('common.comp.confirm') }}
-                </button>
+                <slot name="footer">
+                    <button type="submit"
+                            class="ui-btn ui-btn--default"
+                            @click="hide">No</button>
+                    <button type="submit"
+                            class="ui-btn"
+                            @click="submit">Yes</button>
+                </slot>
             </div>
         </div>
     </div>
@@ -32,7 +32,7 @@
     export default {
         name: "Modal",
         props: {
-            show: {
+            visible: {
                 type: Boolean,
                 default: true
             },
@@ -57,7 +57,7 @@
         },
         computed: {
             isShow() {
-                return this.show;
+                return this.visible;
             }
         },
         data() {
@@ -85,6 +85,7 @@
         left: 0;
         z-index: $zIndex-dialog;
         background-color: rgba(0, 0, 0, 0.4);
+        color: #333;
         .dialog-box {
             position: absolute;
             left: 50%;

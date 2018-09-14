@@ -9,23 +9,18 @@ import Modal from '../../../component/Modal';
 export default {
     name: 'Advantage',
     components: {
-        Modal
+
     },
     created() {
 
     },
     data(){
         return {
-            isShowDemo: false
+
         }
     },
     methods: {
-        submit() {
-            this.isShowDemo = false;
-        },
-        hideDialog() {
-            this.isShowDemo = false;
-        }
+
     }
 
 }

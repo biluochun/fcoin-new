@@ -30,13 +30,21 @@ export default new Router({
         //     }
         // },
         {
-            // FT
             path: '/',
             meta: {
                 title: 'index'
             },
             component(resolve) {
                 require(['../view/index/index.vue'], resolve);
+            }
+        },
+        {
+            path: '/demo',
+            meta: {
+                title: 'demo'
+            },
+            component(resolve) {
+                require(['../view/demo/index.vue'], resolve);
             }
         },
     ]

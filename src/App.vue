@@ -1,9 +1,16 @@
 <template>
     <div id="app" v-wechat-title="'FCoin'">
-        <router-view></router-view>
+        <layout>
+            <router-view></router-view>
+        </layout>
     </div>
 </template>
 
 <script>
-    export default {}
+    import Layout from './include/Layout';
+    export default {
+        components: {
+            Layout
+        }
+    }
 </script>
