@@ -69,6 +69,10 @@ ajax.interceptors.response.use(response => {
 });
 
 export default {
+
+    setHeader(key, value) {
+        ajax.defaults.headers.common[key] = value;
+    },
     
     post(url, data) {
         return new Promise((resolve, reject) => {

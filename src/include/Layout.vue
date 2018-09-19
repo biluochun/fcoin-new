@@ -2,7 +2,7 @@
     <div class="layout">
         <layout-header></layout-header>
         <slot></slot>
-        <!--<layout-footer></layout-footer>-->
+        <layout-footer></layout-footer>
     </div>
 </template>
 

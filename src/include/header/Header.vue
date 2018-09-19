@@ -10,13 +10,13 @@
             </div>
             <div class="header-top-right">
                 <div v-if="showLangBox" class="lang-box">
-                    <p class="lang-item" @click="changeLang('简体中文')">
+                    <p class="lang-item" @click="changeLang($store.state.LANG_CN, LANG_TEXT_CN)">
                         <img class="lang-country" src="./img/Chinese.png" alt="">
-                        <span class="text">简体中文</span>
+                        <span class="text">{{LANG_TEXT_CN}}</span>
                     </p>
-                    <p class="lang-item" @click="changeLang('English')">
+                    <p class="lang-item" @click="changeLang($store.state.LANG_EN, LANG_TEXT_EN)">
                         <img class="lang-country" src="./img/English.png" alt="">
-                        <span class="text">English</span>
+                        <span class="text">{{LANG_TEXT_EN}}</span>
                     </p>
                 </div>
                 <span class="header-top-entry">

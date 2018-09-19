@@ -5,9 +5,17 @@
  */
 import swiperBanner from '../../../component/Swiper';
 import service from '../service';
+import lang from './lang';
 
 export default {
     name: 'Banner',
+    i18n: {
+        local: 'en',
+        messages: {
+            cn: lang.cn,
+            en: lang.en
+        }
+    },
     components: {
         swiperBanner
     },

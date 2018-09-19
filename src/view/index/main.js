@@ -11,11 +11,15 @@ import Symbols from './symbols/index.vue';
 import Year from './year/index.vue';
 import App from './app/index.vue';
 import lang from './lang';
+
 export default {
     name: 'Index',
     i18n: {
         locale: localStorage.getItem('locale') || 'cn',
-        messages: lang
+        messages: {
+            cn: lang.cn,
+            en: lang.en
+        }
     },
     components: {
         Layout,

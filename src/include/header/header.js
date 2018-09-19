@@ -1,9 +1,16 @@
+
+
+const LANG_TEXT_EN = 'English';
+const LANG_TEXT_CN = '简体中文';
+
 export default {
     name: 'App',
     data() {
         return {
+            LANG_TEXT_EN,
+            LANG_TEXT_CN,
             showLangBox: false,
-            langText: '简体中文',
+            langText: LANG_TEXT_CN,
             showUserMenu: false,
         }
     },
@@ -11,10 +18,10 @@ export default {
         
     },
     methods: {
-        changeLang(str) {
-            this.langText = str
-            this.showLangBox = false
-            this.$store.commit('setLang','cn-zh')
+        changeLang(langKey, langText) {
+            this.langText = langText;
+            this.showLangBox = false;
+            this.$store.commit('setLang', langKey);
         }
     },
 };
