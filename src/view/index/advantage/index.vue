@@ -1,6 +1,7 @@
 <template>
     <div class="module-advantage">
         module-advantage
+        {{$t('common.serverError')}}
     </div>
 </template>
 
