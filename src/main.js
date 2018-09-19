@@ -18,7 +18,7 @@ Vue.use(VueLocalStorage);
 
 Vue.config.productionTip = false;
 
-let currentLang = window.localStorage.getItem('lang') || store.state.LANG_ZH;
+let currentLang = window.localStorage.getItem('lang') || store.state.LANG_CN;
 if (currentLang) {
     store.commit('setLang', currentLang);
 }
@@ -37,6 +37,7 @@ router.beforeEach((to, from, next) => {
 new Vue({
     el: '#app',
     i18n: {
+        locale: store.state.lang,
         messages: {
             cn: {
                 common: commonLang.cn

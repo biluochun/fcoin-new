@@ -8,7 +8,6 @@ import lang from './lang';
 
 export default {
     i18n: {
-        locale: 'cn',
         messages: {
             cn: lang.cn,
             en: lang.en

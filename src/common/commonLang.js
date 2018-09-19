@@ -4,21 +4,22 @@
  * @date 2018/9/10 下午8:57
  */
 
-import compLang from '../component/lang';
-import includeLang from '../include/lang';
-
 export default {
 
     en: {
         serverError: 'Server Error',
-        comp: compLang.en,
-        include: includeLang.en
+        confirm: 'Confirm',
+        waiting: 'Waiting',
+        cancel: 'Cancel',
+        success: 'Success',
     },
 
     cn: {
         serverError: '服务器繁忙，请稍候重试',
-        comp: compLang.cn,
-        include: includeLang.cn
+        confirm: '确认',
+        waiting: '请求中',
+        cancel: '取消',
+        success: '成功',
     }
 
 }

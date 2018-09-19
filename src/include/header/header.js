@@ -21,6 +21,7 @@ export default {
         changeLang(langKey, langText) {
             this.langText = langText;
             this.showLangBox = false;
+            this.$i18n.locale = langKey;
             this.$store.commit('setLang', langKey);
         }
     },

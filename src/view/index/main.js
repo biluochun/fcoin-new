@@ -15,7 +15,6 @@ import lang from './lang';
 export default {
     name: 'Index',
     i18n: {
-        locale: localStorage.getItem('locale') || 'cn',
         messages: {
             cn: lang.cn,
             en: lang.en

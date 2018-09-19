@@ -5,9 +5,16 @@
  */
 
 import Modal from '../../../component/Modal';
+import lang from './lang';
 
 export default {
     name: 'Advantage',
+    i18n: {
+        messages: {
+            cn: lang.cn,
+            en: lang.en
+        },
+    },
     components: {
 
     },
