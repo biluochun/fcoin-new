@@ -7,6 +7,7 @@
 import Layout from '../../include/Layout.vue';
 import Advantage from './advantage/index.vue';
 import Banner from './banner/index.vue';
+import Search from '../../component/Search/Search.vue';
 import Symbols from './symbols/index.vue';
 import Year from './year/index.vue';
 import App from './app/index.vue';
@@ -23,6 +24,7 @@ export default {
     components: {
         Layout,
         Banner,
+        Search,
         Symbols,
         Advantage,
         Year,

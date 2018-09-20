@@ -1,6 +1,7 @@
 <template>
     <div class="page-index">
         <banner></banner>
+        <search></search>
         <symbols></symbols>
         <advantage></advantage>
         <year></year>
