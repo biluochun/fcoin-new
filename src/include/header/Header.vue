@@ -1,3 +1,9 @@
+/*
+ * @Author: liujikuan 
+ * @Date: 2018-09-20 17:48:16 
+ * @Last Modified by:   liujikuan 
+ * @Last Modified time: 2018-09-20 17:48:16 
+ */
 <template>
     <header class="module-header">
         <div class="header-top">

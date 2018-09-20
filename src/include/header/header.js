@@ -1,5 +1,9 @@
-
-
+/*
+ * @Author: liujikuan 
+ * @Date: 2018-09-20 17:47:59 
+ * @Last Modified by:   liujikuan 
+ * @Last Modified time: 2018-09-20 17:47:59 
+ */
 import lang from './lang';
 const LANG_TEXT_EN = 'English';
 const LANG_TEXT_CN = '简体中文';
