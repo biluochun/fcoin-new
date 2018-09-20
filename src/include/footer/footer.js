@@ -22,6 +22,8 @@ export default {
         
     },
     methods: {
-
+        isToggle(flag){
+            this.toggleLang = flag
+        }
     },
 };

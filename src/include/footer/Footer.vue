@@ -36,35 +36,35 @@
                </div>
             </div>  
             <div class="footer-community fn-clearfix">
-                <a href="https://twitter.com/FCoinOfficial">
+                <a href="https://twitter.com/FCoinOfficial" class="link">
                     <i class="icon-twitter">
                         <i class="path2"></i>
                     </i>
                 </a>
-                <a href="javascript:;">
+                <a href="javascript:;" @mouseover="isToggle(true)" @mouseout="isToggle(false)" class="link">
                     <i class="icon-telegram">
                         <i class="path2"></i>
                     </i>
                     <div class="language" v-show="toggleLang">
-                        <span>English</span>
-                        <span>中文</span>
+                        <span><a href=""  class="footer-link">English</a></span>
+                        <span> <a href="" class="footer-link">中文电报群</a></span>
                     </div>
                 </a>
-                <a href="https://github.com/FCoinOfficial">
+                <a href="https://github.com/FCoinOfficial" class="link">
                     <i class="icon-github">
                         <i class="path2"></i>
                     </i></a>
-                <a href="https://medium.com/@FCoinOfficial" >
+                <a href="https://medium.com/@FCoinOfficial" class="link">
                     <i class="icon-medium">
                         <i class="path2"></i>
                     </i>
                 </a>
-                <a href="https://www.reddit.com/user/fcoinoffical/" >
+                <a href="https://www.reddit.com/user/fcoinoffical/" class="link">
                     <i class="icon-reddit">
                         <i class="path2"></i>
                     </i>
                 </a>
-                <a href="https://fcoinofficial.slack.com">
+                <a href="https://fcoinofficial.slack.com" class="link">
                     <i class="icon-slack">
                         <i class="path2"></i>
                     </i>

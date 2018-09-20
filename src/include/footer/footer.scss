@@ -54,7 +54,7 @@
         .footer-community{
             padding-top:60px;
             text-align: center;
-            a{
+            .link{
                 width: 60px;
                 height: 60px;
                 margin:0 20px;
@@ -87,7 +87,9 @@
                         text-align: left;
                         line-height: 40px;
                         padding-left:20px;
-                        color:#E9E9E9;
+                        .footer-link{
+                            color:#E9E9E9;
+                        }
                         &:hover{
                             background: #14181c;
                         }

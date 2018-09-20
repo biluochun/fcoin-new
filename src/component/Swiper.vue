@@ -80,8 +80,18 @@ export default {
 }
 </script>
 <style lang='scss'>
+.swiper-container{
+    height:320px;
+}
 .swiper-pagination-bullet-active{
     background-color: #737C80;
+}
+.swiper-container-autoheight, .swiper-container-autoheight .swiper-slide{
+    height: 320px;
+    img{
+        display: block;
+        height: 100%;
+    }
 }
 .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{
     bottom:28px;
