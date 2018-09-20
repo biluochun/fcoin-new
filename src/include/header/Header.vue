@@ -2,11 +2,11 @@
     <header class="module-header">
         <div class="header-top">
             <div class="header-top-left">
-                <span class="header-entry">FT</span>
-                <span class="header-entry">白皮书</span>
-                <span class="header-entry">资产透明</span>
-                <span class="header-entry">FInsur</span>
-                <span class="header-entry">FCandy</span>
+                <span class="header-entry">{{$t('header.ft')}}</span>
+                <span class="header-entry">{{$t('header.white_paper')}}</span>
+                <span class="header-entry">{{$t('header.transparent_assets')}}</span>
+                <span class="header-entry">{{$t('header.finsur')}}</span>
+                <span class="header-entry">{{$t('header.fcandy')}}</span>
             </div>
             <div class="header-top-right">
                 <div v-if="showLangBox" class="lang-box">
@@ -23,7 +23,7 @@
                     <i class="icon-app icon-top-left">
                         <i class="path2"></i>    
                     </i>
-                    <span>App下载</span>
+                    <span>{{$t('header.app_select')}}</span>
                     <!-- <span class="text">{{$t(header.app_select)}}</span> -->
                 </span>
                 <span class="header-top-entry" @click="showLangBox=!showLangBox">
@@ -42,8 +42,8 @@
                         <i class="path1"></i><i class="path2"></i>   
                     </i>
                 </span> -->
-                <span class="header-exchange-entry">主板交易</span>
-                <span class="header-exchange-entry">FOne交易</span>
+                <span class="header-exchange-entry">{{$t('header.exchange')}}</span>
+                <span class="header-exchange-entry">{{$t('header.fone_exchange')}}</span>
             </div>
             <div class="header-bottom-right">
                 <div v-if="showUserMenu" class="user-menu">
@@ -62,8 +62,8 @@
                     <i :class="[{'icon-down icon-up-down':!showUserMenu},{'icon-up icon-up-down':showUserMenu}]"></i>
                 </span>
                 <ul class="login-btn">
-                    <li class="btn"><a class="link" href="javascript:;">登录</a></li>
-                    <li class="btn"><a class="link" href="javascript:;">注册</a></li>
+                    <li class="btn"><a class="link" href="javascript:;">{{$t('header.sign_in')}}</a></li>
+                    <li class="btn"><a class="link" href="javascript:;">{{$t('header.sign_up')}}</a></li>
                 </ul>
             </div>
         </div>
