@@ -1,17 +1,9 @@
 
 .module-year {
     width:100%;
-    height: 606px;
-    padding:120px 0;
+    padding:120px 0 120px;
     box-sizing: border-box;
     border-bottom: 1px solid $color-font-gray;
-    .module-year-title{
-        font:24px 'MicrosoftYaHei';
-        color:$color-font;
-        text-align: center;
-        font-weight: normal;
-        margin-bottom: 60px;
-    }
     .module-year-content{
         width: 100%;
         height: 280px;

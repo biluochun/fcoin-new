@@ -2,26 +2,23 @@
 .module-advantage {
     width: 100%;
     box-sizing: border-box;
-    padding-top:120px;
-    height: 628px;
+    padding:120px 0 120px;
+    border:none;
     border-bottom:1px solid $color-font-gray;
     .module-advantage-title{
-        font:24px 'MicrosoftYaHei';
-        color:$color-font;
-        text-align: center;
-        font-weight: normal;
-        margin-bottom: 60px;
+        margin-bottom: 44px;
     }
     .module-advantage-nav{
         width: 100%;
         border-bottom:1px solid $color-font-gray;
         .advantage-nav-list{
             display: flex;
-            height: 32px;
+            height: 64px;
             width: 100%;
             .item{
                 flex: 1;
-                height: 32px;
+                height: 64px;
+                line-height: 64px;
                 text-align: center;
                 font-size:12px;
                 color:$color-font;

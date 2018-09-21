@@ -6,7 +6,7 @@
                 <img src="./img/app_icon.png" alt="">
             </div>
             <div class="app-title">
-                <p class="app-text">随时随地交易，快人一步成交你</p>
+                <p class="app-text">随时随地交易，快人一步成交</p>
                 <p class="app-system">扫码后，连接VPN下载Android&IOS</p>
             </div>
             <div class="down-code">

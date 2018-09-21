@@ -1,6 +1,6 @@
 <template>
     <div class="module-year">
-       <h3 class="module-year-title">FCoin路线图</h3>
+       <h3 class="index-title">FCoin路线图</h3>
        <div class="module-year-content">
            <div class="layout-container line-year">
                <ul class="line-list fn-clearfix">

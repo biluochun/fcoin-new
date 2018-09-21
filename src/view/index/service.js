@@ -15,11 +15,17 @@ export default {
     getAnnouncement(params) {
         return ajax.get('/openapi/v1/hc/announcements', params);
     },
-    // 获取收入分配
+    /**
+     * 
+     * @param {*} params 
+     * 获取收入分配
+     */
     get_trading_fees_group(params) {
         return ajax.get('/openapi/v1/exchange/trading_fees_group', params)
     },
-    // 获取fci06
+    /**
+     * 获取fci06
+     */
     get_fci06(params) {
         return ajax.get('/openapi/v1/indexes/index/current', params)
     },

@@ -23,13 +23,13 @@ export default {
     created() {
         this._fetchMainNotice();
         this._fetchCommunityNotice();
-        this._get_trading_fees_group()
-        this._get_fci06()
-        commonService.onLoopSocketData({
-            initCallback: (config) => {
-                console.log('config',config)
-            }
-        })
+        this._get_trading_fees_group();
+        this._get_fci06();
+        // commonService.onLoopSocketData({
+        //     initCallback: (config) => {
+        //         console.log('config',config)
+        //     }
+        // })
     },
     data() {
         return {
@@ -43,7 +43,7 @@ export default {
                     voteTimer: '投票时间为：8月27日18：00（GMT+8）至8月28日18：00（GMT+8)',
                     partIn: 'javascript:;'
                 }, {
-                    img: require('./img/banner.png'),
+                    img: require('./img/banner02.png'),
                     url: 'javascript:;',
                     voteTitle: 'FCoin提案决策投票',
                     voteTimer: '投票时间为：10月10日18：00（GMT+8）至8月28日18：00（GMT+8)',
@@ -93,7 +93,6 @@ export default {
             .then(res=>{
                 if(res.status==='ok'){
                     let result = res.data;
-                    console.log('result',result)
                     this.ft_circulation = Util.toThousands(result.ft_circulation)
                     this.ft_destruction = Util.toThousands(result.ft_destroy_amount);
                     this.ft_secondary = Util.toThousands(result.secondary_circulation);
@@ -109,7 +108,6 @@ export default {
             .then(res=>{
                 if(res.status==='ok'){
                     let result = res.data;
-                    console.log(result)
                     let flag = ''
                     if(parseInt(result.increase)>0){
                         this.fci06_color = 'green'
