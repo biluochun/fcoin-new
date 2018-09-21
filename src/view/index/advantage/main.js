@@ -4,7 +4,6 @@
  * @date 2018/9/7 下午7:33
  */
 
-import Modal from '../../../component/Modal';
 import lang from './lang';
 
 export default {

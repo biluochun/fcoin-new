@@ -23,7 +23,7 @@
             <ul class="list">
                 <li class="item">
                     <div class="item-label">{{$t('circulating')}}</div>
-                    <div class="item-text"></div>
+                    <div class="item-text">4,954,829,912.07663499 <span>FT</span></div>
                 </li>
                 <li class="item">
                     <div class="item-label">{{$t('destruction')}}</div>

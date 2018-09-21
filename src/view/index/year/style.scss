@@ -4,7 +4,6 @@
     height: 606px;
     padding:120px 0;
     box-sizing: border-box;
-    border-top:1px solid $color-font-gray;
     border-bottom: 1px solid $color-font-gray;
     .module-year-title{
         font:24px 'MicrosoftYaHei';
@@ -15,7 +14,7 @@
     }
     .module-year-content{
         width: 100%;
-        height: 246px;
+        height: 280px;
         background: url(./img/line.png) repeat-x center;
         position: relative;
         &::after{
@@ -31,14 +30,72 @@
         .line-year{
             position: relative;
             height: 100%;
-            .line-item{
+            .line-list{
+                display: flex;
+                height: 100%;
+                .info-timer{
+                    font-size: 16px;
+                    color:$color-link;
+                    margin-bottom:10px;
+                    &.white{
+                        color:$color-font;
+                    }
+                }
+                .info-text{
+                    font-size: 12px;
+                    color:$color-font-gray;
+                }
+            }
+            .line-item:nth-child(2n+1){
+                width: 208px;
                 height: 145px;
                 position: absolute;
-                bottom:0;
-                left:80px;
-                padding-left:16px;
                 background: url(./img/up-green.png) no-repeat;
-                
+                z-index: 2;
+                box-sizing: border-box;
+                flex:1;
+                .line-item-info{
+                    position: absolute;
+                    bottom:0;
+                    left:16px;
+                }
+            }
+            .line-item:first-child{
+                bottom:0;
+                left:10px;
+            }
+            .line-item:nth-child(2n){
+                width: 208px;
+                height: 145px;
+                position: absolute;
+                background: url(./img/down-green.png) no-repeat;
+                z-index: 2;
+                box-sizing: border-box;
+                flex:1;
+                .line-item-info{
+                    position: absolute;
+                    top:0;
+                    left:16px;
+                }
+            }
+            .line-item:nth-child(2){
+                top:0;
+                left:244px;
+            }
+            .line-item:nth-child(3){
+                bottom:0;
+                left:478px;
+                background: url(./img/up-white.png) no-repeat;
+            }
+            .line-item:nth-child(4){
+                top:0;
+                left:712px;
+                background: url(./img/down-white.png) no-repeat;
+            }
+            .line-item:nth-child(5){
+                bottom:0;
+                left:946px;
+                background: url(./img/up-white.png) no-repeat;
             }
         }
     }

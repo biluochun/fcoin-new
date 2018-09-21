@@ -7,11 +7,23 @@
 export default {
 
     en: {
-
+        advantage:'advantage',
+        services:{
+            title:'Services',
+            services_item_1: 'Exchange',
+            services_item_2: 'Help center',
+            services_item_3: 'Submit a request',
+        },
     },
 
     cn: {
-
+        advantage:'FCoin 优势',
+        services:{
+            title:'Services',
+            services_item_1: 'Exchange',
+            services_item_2: 'Help center',
+            services_item_3: 'Submit a request',
+        },
     }
 
 };

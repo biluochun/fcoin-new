@@ -1,5 +1,13 @@
 
 .module-app {
+    padding-top:120px;
+    .module-app-title{
+        font:24px 'MicrosoftYaHei';
+        color:$color-font;
+        text-align: center;
+        font-weight: normal;
+        margin-bottom: 60px;
+    }
     .app-container{
         width: 1200px;
         height: 570px;
