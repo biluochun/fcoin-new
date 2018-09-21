@@ -2,7 +2,7 @@
  * @Author: liujikuan 
  * @Date: 2018-09-20 15:13:39 
  * @Last Modified by: liujikuan
- * @Last Modified time: 2018-09-21 19:39:19
+ * @Last Modified time: 2018-09-21 19:55:07
  */
 <template>
     <div class="module-search">
@@ -22,7 +22,7 @@
             </div>
             <div class="search-input">
                 <input class="input" type="text" ref="searchInput">
-                <i class="icon-search"></i>
+                <i class="icon-search" @click="searchFocus"></i>
 
                 <ul ref="ulSymbol" class="search-symbol">
                     <li class="item">
