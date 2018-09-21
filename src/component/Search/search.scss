@@ -2,11 +2,128 @@
  * @Author: liujikuan 
  * @Date: 2018-09-20 15:14:23 
  * @Last Modified by: liujikuan
- * @Last Modified time: 2018-09-20 18:09:50
+ * @Last Modified time: 2018-09-21 19:18:11
  */
 
 .module-search{
-    height: 300px;
-    border: 1px solid green;
-    margin: 30px;
+    width: 1200px;
+    margin: 40px auto 140px;
+    
+    .search {
+        display: flex;
+        box-sizing: border-box;
+        margin: 0 auto;
+        width: 640px;
+        height: 40px;
+        line-height: 40px;
+        border: 1px solid #737C80;
+        font-size: 13px;
+        .search-select {
+            position: relative;
+            display: inline-block;
+            width: 140px;
+            height: 38px;
+            line-height: 38px;
+            box-sizing: border-box;
+            border-right: 1px solid #737C80;
+            .select-curr {
+                padding-left: 16px;
+                box-sizing: border-box;
+                color: #737C80;
+                transition: all 0.1s ease;
+                .icon-right {
+                    position: absolute;
+                    right: 8px;
+                    top: 14px;
+                }
+            }
+            .select-options {
+                position: absolute;
+                top: 42px;
+                left: -1px;
+                width: 140px;
+                border: 1px solid #14181C;
+                .option {
+                    padding-left: 15px;
+                    line-height: 40px;
+                    color: #E9E9E9;
+                    cursor: pointer;
+                }
+                .option:hover {
+                    background: #394A53;
+                }
+            }
+        }
+        .search-input {
+            flex: 1;
+            position: relative;
+            width: 100%;
+            height: 38px;
+            line-height: 38px;
+            padding-right: 30px;
+            font-size: 0;
+            .input {
+                width: 100%;
+                height: 38px;
+                line-height: 38px;
+                padding-left: 12px;
+                color: #E9E9E9;
+                background: #15232c;
+                border: none;
+                font-size: 13px;
+                outline:none;
+            }
+            .icon-search {
+                position: absolute;
+                top: 12px;
+                right: 12px;
+                font-size: 16px;
+                cursor: pointer;
+
+            }
+            .search-symbol {
+                position: absolute;
+                top: 42px;
+                right: 0;
+                width: 100%;
+                z-index: 99;
+                overflow: hidden;
+                padding-bottom: 4px;
+                background-color: #15232c;
+                border: 1px solid #14181C;
+                .item {
+                    height: 40px;
+                    line-height: 40px;
+                    background-color: #15232c;
+                    -webkit-box-sizing: border-box;
+                    box-sizing: border-box;
+                    font-size: 13px;
+                    cursor: pointer;
+                    .item-a {
+                        display: block;
+                        padding: 0 16px;
+                        color: #e9e9e9;
+                        em.category {
+                            // float: right;
+                            font-size: 13px;
+                            color: #737c80;
+                            transition: all 0.4s ease;
+                        }
+                        &.hover {
+                            background-color: #2f3d45;
+                        }
+                        &:hover {
+                            background-color: #2f3d45;
+                        }
+                        &.item-a-center {
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+
+        }
+
+        
+    }
 }
