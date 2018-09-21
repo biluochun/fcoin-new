@@ -95,6 +95,9 @@ export default {
 }
 .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{
     bottom:28px;
+    span{
+        outline: none;
+    }
 }
 .banner-title{
        position: absolute;
