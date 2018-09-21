@@ -23,27 +23,34 @@
             <ul class="list">
                 <li class="item">
                     <div class="item-label">{{$t('circulating')}}</div>
-                    <div class="item-text">4,954,829,912.07663499 <span>FT</span></div>
+                    <div class="item-text">{{ft_circulation}} <span>FT</span></div>
                 </li>
                 <li class="item">
                     <div class="item-label">{{$t('destruction')}}</div>
-                    <div class="item-text"></div>
+                    <div class="item-text">{{ft_destruction}} <span>FT</span></div>
                 </li>
                 <li class="item">
                     <div class="item-label">{{$t('secondary')}}</div>
-                    <div class="item-text"></div>
+                    <div class="item-text">{{ft_secondary}} <span>FT</span></div>
                 </li>
                 <li class="item">
                     <div class="item-label">{{$t('yesterday_convert')}}</div>
                     <div class="item-text"></div>
                 </li>
                 <li class="item">
-                    <div class="item-label">{{$t('week_fci06')}}</div>
-                    <div class="item-text"></div>
+                    <div class="item-label">{{$t('week_fci06')}}（{{$t('fci06_clock')}}{{fci06_base}}）</div>
+                    <div class="item-text">
+                        <span :class="fci06_color">{{fci06_rate}}</span>
+                        <span :class="fci06_color" class="item-label">（{{$t('fci06_curr')}}{{fci06_curr}})</span>
+                    </div>
                 </li>
                 <li class="item">
-                    <div class="item-label">{{$t('today_income')}}</div>
-                    <div class="item-text"></div>
+                    <div class="item-label">{{$t('today_income')}}{{$t('today_undeducted')}}</div>
+                    <div class="item-text">
+                        <span v-show="status==='normal'">{{today_summary}} <i>BTC</i></span>
+                        <span v-show="status==='calculating'">{{$t('maintain')}}</span>
+                        <span v-show="status==='dividend_payment'">{{$t('calculation')}}</span>
+                    </div>
                 </li>
             </ul>
         </div>

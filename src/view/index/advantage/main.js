@@ -22,11 +22,13 @@ export default {
     },
     data(){
         return {
-
+            currentTab:'advantage_1_title'
         }
     },
     methods: {
-
+        toggleTab(navTab){
+            this.currentTab = navTab
+        }
     }
 
 }
