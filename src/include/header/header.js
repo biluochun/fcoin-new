@@ -1,10 +1,21 @@
-
-
+/*
+ * @Author: liujikuan 
+ * @Date: 2018-09-20 17:47:59 
+ * @Last Modified by:   liujikuan 
+ * @Last Modified time: 2018-09-20 17:47:59 
+ */
+import lang from './lang';
 const LANG_TEXT_EN = 'English';
 const LANG_TEXT_CN = '简体中文';
 
 export default {
-    name: 'App',
+    name: 'Header', 
+    i18n: {
+        messages: {
+            cn: lang.cn,
+            en: lang.en
+        },
+    },
     data() {
         return {
             LANG_TEXT_EN,

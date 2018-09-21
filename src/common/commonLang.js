@@ -12,6 +12,8 @@ export default {
         waiting: 'Waiting',
         cancel: 'Cancel',
         success: 'Success',
+
+        search: 'search'
     },
 
     cn: {
@@ -20,6 +22,8 @@ export default {
         waiting: '请求中',
         cancel: '取消',
         success: '成功',
+
+        search: '搜索'
     }
 
 }
