@@ -2,6 +2,7 @@
     <div class="page-index">
         <banner></banner>
         <search></search>
+        <ticker></ticker>
         <symbols></symbols>
         <advantage></advantage>
         <year></year>

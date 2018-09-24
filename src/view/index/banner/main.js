@@ -25,17 +25,26 @@ export default {
         this._fetchCommunityNotice();
         this._get_trading_fees_group();
         this._get_fci06();
-        // commonService.onLoopSocketData({
-        //     initCallback: (config) => {
-        //         console.log('config',config)
-        //     }
-        // })
+        commonService.onLoopSocketData({
+            initCallback: (config) => {
+                console.log('config',config)
+                this.tickerDatas = config.symbolMap
+                this.currentPrice = config.currentPrice
+                this._get_trading_fees_group(()=>{
+                    this.yesterdayConvert =  Util.toThousands((Util.numMulti(Util.numMulti(this.prevAllSummary,500),this.currentPrice.btc)).toFixed(2)) + ' USDT';
+                })
+
+            },
+            loopCallback:(config)=>{
+                //console.log(config)
+            }
+        })
     },
     data() {
         return {
-            mainAnnouncementList: [],
-            communityAnnouncementList: [],
-            bannerList: [
+            mainAnnouncementList: [],//平台公告
+            communityAnnouncementList: [],//社区治理公告
+            bannerList: [                 //banner配置
                 {
                     img: require('./img/banner.jpg'),
                     url: 'javascript:;',
@@ -50,18 +59,20 @@ export default {
                     partIn: 'javascript:;'
                 }
             ],
-            ft_circulation:'-',
-            ft_destruction: '-',
-            ft_secondary:'-',
-            yesterday_convert: '-',
+            ftCirculation:'-',//FT总流通量
+            ftDestruction: '-',//FT总销毁量
+            ftSecondary:'-',//FT二级市场流通量
+            yesterdayConvert: '-',//昨日全站交易量折合
             fci06_rate: '-',
             fci06_color: '',
             fci06_base: '-',
             fci06_curr: '-',
             status:'normal',
-            today_summary: '-',
-            prev_all_summary: '',
+            todaySummary: '-',//今日手续费收入总额折合
+            prevAllSummary: '',
             currentPrice: {},
+            tickerDatas:{},
+            currentPrice:{}
         }
     },
     methods: {
@@ -71,8 +82,8 @@ export default {
                 pageSize: 3,
                 type: 'main',
             }).then(rep => {
-                if (rep.status === 'ok') {
-                    this.mainAnnouncementList = rep.data.content;
+                if (rep.status ===  200) {
+                    this.mainAnnouncementList = rep.data.data.content;
                 }
             });
         },
@@ -83,22 +94,23 @@ export default {
                 pageSize: 3,
                 type: 'community_governance'
             }).then(rep => {
-                if (rep.status === 'ok') {
-                    this.communityAnnouncementList = rep.data.content;
+                if (rep.status === 200) {
+                    this.communityAnnouncementList = rep.data.data.content;
                 }
             });
         },
         _get_trading_fees_group(callback){
             service.get_trading_fees_group({})
             .then(res=>{
-                if(res.status==='ok'){
-                    let result = res.data;
-                    this.ft_circulation = Util.toThousands(result.ft_circulation)
-                    this.ft_destruction = Util.toThousands(result.ft_destroy_amount);
-                    this.ft_secondary = Util.toThousands(result.secondary_circulation);
+                //console.log('res',res)
+                if(res.status===200){
+                    let result = res.data.data;
+                    this.ftCirculation = Util.toThousands(result.ft_circulation)
+                    this.ftDestruction = Util.toThousands(result.ft_destroy_amount);
+                    this.ftSecondary = Util.toThousands(result.secondary_circulation);
                     this.status = result.data_state;
-                    this.today_summary = result.summary
-                    this.prev_all_summary = result.prev_day_dividend_detail.summary
+                    this.todaySummary = result.summary
+                    this.prevAllSummary = result.prev_day_dividend_detail.summary
                     callback && callback()
                 }
             })
@@ -106,8 +118,8 @@ export default {
         _get_fci06(){
             service.get_fci06({})
             .then(res=>{
-                if(res.status==='ok'){
-                    let result = res.data;
+                if(res.status===200){
+                    let result = res.data.data;
                     let flag = ''
                     if(parseInt(result.increase)>0){
                         this.fci06_color = 'green'

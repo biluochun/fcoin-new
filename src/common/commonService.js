@@ -133,7 +133,7 @@ export default {
             this.getProperties(),
             this.getCategoryConfig()
         ]).then(axios.spread((repSymbolConfig, repProperties, repCategoryConfig) => {
-
+            
             if (repSymbolConfig.data.status !== 'ok') {
                 throw new Error('api.getSymbolConfig error');
                 return;

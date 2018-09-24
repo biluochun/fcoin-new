@@ -87,7 +87,7 @@ export default {
                 if (httpRep.data.status !== 'ok') {
                     throw new Error(httpRep.data.err_msg);
                 }
-                resolve(httpRep.data);
+                resolve(httpRep);
             });
         });
     },
@@ -102,7 +102,7 @@ export default {
                 if (httpRep.data.status !== 'ok') {
                     throw new Error(httpRep.data.err_msg);
                 }
-                resolve(httpRep.data);
+                resolve(httpRep);
             });
         });
     },
@@ -117,7 +117,7 @@ export default {
                 if (httpRep.data.status !== 'ok') {
                     throw new Error(httpRep.data.err_msg);
                 }
-                resolve(httpRep.data);
+                resolve(httpRep);
             });
         });
     },
@@ -132,7 +132,7 @@ export default {
                     'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'
                 }
             }).then((httpRep) => {
-                resolve(httpRep.data);
+                resolve(httpRep);
             });
         });
 

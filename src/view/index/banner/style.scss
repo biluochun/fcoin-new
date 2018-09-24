@@ -50,15 +50,17 @@
             .item{
                 flex: 1;
                 background: $color-bg-gray;
-                padding:36px 0 0 30px;
+                padding:36px 0 36px 30px;
                 border-right:1px solid $color-border-dark;
+                display: flex;
+                flex-direction: column;
+                justify-content:space-between;
                 &:last-child{
                     border:none;
                 }
                 .item-label{
                     font-size:12px;
                     color:$color-font-gray;
-                    margin-bottom: 20px;
                 }
                 .item-text{
                     font-size:16px;
